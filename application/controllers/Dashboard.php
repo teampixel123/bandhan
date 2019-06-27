@@ -127,7 +127,8 @@ class Dashboard extends CI_Controller{
       );
       $this->Admin_Model->save_tour($tour_data);
       $this->session->set_userdata('tour_id',$tour_id);
-      header('location:add_itinerary');
+      $this->session->set_flashdata('status','tour_add_success');
+      header('location:tour_details');
     }
     else{
       $error = $this->upload->display_errors();
@@ -137,7 +138,13 @@ class Dashboard extends CI_Controller{
   }
 
   public function update_tour(){
-    $tour_id = $this->input->post('tour_id');
+    if($this->input->post('tour_id')){
+      $tour_id = $this->input->post('tour_id');
+    }
+    if($this->session->userdata('tour_id')){
+      $tour_id = $this->session->userdata('tour_id');
+    }
+
     $this->session->set_userdata('tour_id',$tour_id);
     $tour_details = $this->Admin_Model->get_tour_details($tour_id);
     $data['tour_details'] = $tour_details;
@@ -151,16 +158,44 @@ class Dashboard extends CI_Controller{
       'tour_name' => $this->input->post('tour_name'),
       'tour_city_num' => $this->input->post('tour_city_num'),
       'tour_day_num' => $this->input->post('tour_day_num'),
+      'tour_start_city' => $this->input->post('tour_start_city'),
+      'tour_end_city' => $this->input->post('tour_end_city'),
       'tour_price' => $this->input->post('tour_price'),
       'tour_overview' => $this->input->post('tour_overview'),
     );
     $this->Admin_Model->update_tour_db($tour_id,$update_tour_data);
     $this->session->set_flashdata('status','tour_update_success');
-    $tour_details = $this->Admin_Model->get_tour_details($tour_id);
-    $data['tour_details'] = $tour_details;
-    $this->load->view('dashboard/tour_details.php',$data);
+    header('location:tour_details');
   }
 
+  public function update_tour_image(){
+    $tour_id = $this->session->userdata('tour_id');
+    $tour_banner_img_old = $this->input->post('tour_banner_img_old');
+
+    $num = random_string('nozero',6);
+    $image_name = 'tour_'.$tour_id.'_'.$num;
+
+    $config['upload_path'] = 'assets/images/tours/';
+    $config['allowed_types'] = 'jpg';
+    $config['file_name'] = $image_name;
+    $filename = $_FILES['tour_banner_img']['name'];
+    $ext = pathinfo($filename, PATHINFO_EXTENSION);
+    $this->load->library('upload', $config);
+    if ($this->upload->do_upload('tour_banner_img')){
+      $tour_up_image = array(
+        'tour_banner_img' => $image_name.'.'.$ext,
+      );
+      $this->Admin_Model->update_tour_image($tour_id,$tour_up_image);
+      unlink("assets/images/tours/".$tour_banner_img_old);
+      $this->session->set_flashdata('status','tour_image_update_success');
+      header('location:tour_details');
+    }
+    else{
+      $error = $this->upload->display_errors();
+      $this->session->set_flashdata('status',$this->upload->display_errors());
+      header('location:update_tour');
+    }
+  }
 
   public function save_itinerary(){
     $itinerary_data = array(
