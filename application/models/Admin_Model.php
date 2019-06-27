@@ -11,6 +11,10 @@ class Admin_Model extends CI_Model
     $this->db->where('tour_id',$tour_id);
     $this->db->update('tours',$update_tour_data);
   }
+  public function update_tour_image($tour_id,$tour_up_image){
+    $this->db->where('tour_id',$tour_id);
+    $this->db->update('tours',$tour_up_image);
+  }
   public function get_tour_details($tour_id){
     $this->db->select('*');
     $this->db->from('tours');

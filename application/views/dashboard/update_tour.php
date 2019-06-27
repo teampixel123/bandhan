@@ -19,6 +19,7 @@
               <!-- <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p> -->
             </div>
           </div>
+          <div id="tour_update_error" class="alert alert-danger" style="display:none;"  role="alert"></div>
           <!-- Update Information -->
           <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
@@ -68,13 +69,13 @@
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Tour Start City</label>
                       <div class="col-sm-9">
-                        <input type="number" value="<?php echo $tour_details[0]['tour_start_city']; ?>" class="form-control form-control-sm" name="tour_start_city" id="tour_start_city" placeholder="Total Number of Days" required>
+                        <input type="text" value="<?php echo $tour_details[0]['tour_start_city']; ?>" class="form-control form-control-sm" name="tour_start_city" id="tour_start_city" placeholder="Total Number of Days" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Tour End City</label>
                       <div class="col-sm-9">
-                        <input type="number" value="<?php echo $tour_details[0]['tour_end_city']; ?>" class="form-control form-control-sm" name="tour_end_city" id="tour_end_city" placeholder="Total Number of Days" required>
+                        <input type="text" value="<?php echo $tour_details[0]['tour_end_city']; ?>" class="form-control form-control-sm" name="tour_end_city" id="tour_end_city" placeholder="Total Number of Days" required>
                       </div>
                     </div>
                     <div class="form-group row">
@@ -99,7 +100,8 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title mb-3">Update Tour Image</h4>
-                  <form class="forms-sample mb-4" action="<?php echo base_url(); ?>Dashboard/save_tour" method="post" enctype="multipart/form-data">
+                  <form class="forms-sample mb-4" action="<?php echo base_url(); ?>Dashboard/update_tour_image" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="tour_banner_img_old" value="<?php echo $tour_details[0]['tour_banner_img']; ?>">
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Select Image</label>
                       <div class="col-sm-6">
@@ -129,8 +131,19 @@
   </div>
   <!-- container-scroller -->
 <?php include('script.php'); ?>
-
-  <!-- End custom js for this page-->
+<?php if($this->session->flashdata('status')){
+      $status = $this->session->flashdata('status');
+  ?>
+  <input type="text" id="status" name="status" value="<?php echo $status; ?>">
+  <script type="text/javascript">
+    $(document).ready(function(){
+       var status = $('#status').val();
+       $('#tour_update_error').html('<b>Image Update Error</b>'+status);
+       $('#tour_update_error').show().delay('10000').fadeOut();
+    });
+  </script>
+<?php } ?>
+  <!-- End custom js for this page -->
 </body>
 
 </html>
