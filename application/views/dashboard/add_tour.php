@@ -67,13 +67,13 @@
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Tour Start City</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control form-control-sm" name="tour_start_city" id="tour_start_city" placeholder="Total Number of Days" required>
+                        <input type="text" class="form-control form-control-sm" name="tour_start_city" id="tour_start_city" placeholder="Tour Start City" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Tour End City</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control form-control-sm" name="tour_end_city" id="tour_end_city" placeholder="Total Number of Days" required>
+                        <input type="text" class="form-control form-control-sm" name="tour_end_city" id="tour_end_city" placeholder="Tour End City" required>
                       </div>
                     </div>
                     <div class="form-group row">

@@ -1,6 +1,6 @@
 <?php
 $page='contact';
-
+$page_title = 'Bandhan Tourism | Welcome';
 include("include/header.php");
 ?>
 

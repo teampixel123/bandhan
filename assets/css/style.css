@@ -575,7 +575,7 @@ outline: inherit !important;
 
 .text-on-svg{
 	position: absolute;
-	  top: 35%;
+	  top: 135px;
 	  left: 45%;
 	  transform: translate(-50%, -50%);
 		font-weight: 700;
@@ -611,8 +611,8 @@ outline: inherit !important;
 		border-bottom: 5px solid #fec926;
 }
 
- .active{
-		border-bottom: 5px solid #fec926;
+ .active12{
+		border-bottom: 5px solid #fec926!important;
 }
 
 .fixme { background: green; color: white; text-align: center; width: 100%; }

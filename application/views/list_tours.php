@@ -1,5 +1,6 @@
 <?php
 $page='list';
+$page_title = 'Bandhan Tourism | Tour list';
 include('include/header.php');
 ?>
 <style>
@@ -49,7 +50,7 @@ include('include/header.php');
                   <p class="card-text" style="font-weight:bold;">8</p>
                   <p class="card-text" style="font-weight:bold;">10</p>
               </div>
-              
+
             </div>
           </div>
 

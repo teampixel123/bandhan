@@ -1,6 +1,6 @@
 <?php
 $page='terms';
-
+$page_title = 'Bandhan Tourism | Welcome';
 include("include/header.php");
 ?>
 <div class="container">
