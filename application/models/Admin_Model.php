@@ -61,6 +61,9 @@ class Admin_Model extends CI_Model
     $this->db->where('id',$itinerary_id);
     $this->db->delete('itinerary');
   }
+
+  /******************************* Inclusion *************************************/
+  /*    */
   public function save_inclusion($inclusion_data){
     $this->db->insert('inclusion',$inclusion_data);
   }
@@ -73,6 +76,25 @@ class Admin_Model extends CI_Model
     $result = $query->result();
     return $result;
   }
+  public function get_inclusion_details($inclusion_id){
+    $query = $this->db->select('*')
+      ->from('inclusion')
+      ->where('id',$inclusion_id)
+      ->order_by('inclusion_num','ASC')
+      ->get();
+    $result = $query->result_array();
+    return $result;
+  }
+  public function update_inclusion($inclusion_id,$inclusion_update_data){
+    $this->db->where('id',$inclusion_id);
+    $this->db->update('inclusion',$inclusion_update_data);
+  }
+  public function delete_inclusion($inclusion_id){
+    $this->db->where('id',$inclusion_id);
+    $this->db->delete('inclusion');
+  }
+
+  /******************************* Exclusion *************************************/
   public function save_exclusion($exclusion_data){
     $this->db->insert('exclusion',$exclusion_data);
   }
@@ -80,11 +102,64 @@ class Admin_Model extends CI_Model
     $this->db->select('*');
     $this->db->from('exclusion');
     $this->db->where('tour_id',$tour_id);
-    $this->db->order_by('exlusion_num','ASC');
+    $this->db->order_by('exclusion_num','ASC');
     $query = $this->db->get();
     $result = $query->result();
     return $result;
   }
+  public function get_exclusion_details($exclusion_id){
+    $query = $this->db->select('*')
+      ->from('exclusion')
+      ->where('id',$exclusion_id)
+      ->order_by('exclusion_num','ASC')
+      ->get();
+    $result = $query->result_array();
+    return $result;
+  }
+  public function update_exclusion($exclusion_id,$exclusion_update_data){
+    $this->db->where('id',$exclusion_id);
+    $this->db->update('exclusion',$exclusion_update_data);
+  }
+  public function delete_exclusion($exclusion_id){
+    $this->db->where('id',$exclusion_id);
+    $this->db->delete('exclusion');
+  }
+
+    /******************************* Tour Cost *************************************/
+    public function save_cost($cost_data){
+      $this->db->insert('tour_cost',$cost_data);
+    }
+    public function cost_list($tour_id){
+      $this->db->select('*');
+      $this->db->from('tour_cost');
+      $this->db->where('tour_id',$tour_id);
+      // $this->db->order_by('cost_num','ASC');
+      $query = $this->db->get();
+      $result = $query->result();
+      return $result;
+    }
+    public function delete_cost($cost_id){
+      $this->db->where('id',$cost_id);
+      $this->db->delete('tour_cost');
+    }
+
+    /******************************* Tour Date *************************************/
+    public function save_date($date_data){
+      $this->db->insert('tour_dates',$date_data);
+    }
+    public function date_list($tour_id){
+      $this->db->select('*');
+      $this->db->from('tour_dates');
+      $this->db->where('tour_id',$tour_id);
+      // $this->db->order_by('date_num','ASC');
+      $query = $this->db->get();
+      $result = $query->result();
+      return $result;
+    }
+    public function delete_date($date_id){
+      $this->db->where('id',$date_id);
+      $this->db->delete('tour_dates');
+    }
 }
 
  ?>

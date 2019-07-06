@@ -29,6 +29,7 @@ class Website extends CI_Controller {
   public function itinerary(){
     $this->load->view('Itinerary');
   }
+	
   public function send_feedback(){
 $name = $this->input->post('name');
 $email = $this->input->post('email');
