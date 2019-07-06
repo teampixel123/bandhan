@@ -414,7 +414,7 @@ include('include/header.php');
 </div>
     </div>
     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-      <div class="row  ">
+      <div class="row">
 
 <div data-aos="fade-up">
       <div class="row">
