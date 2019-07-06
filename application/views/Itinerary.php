@@ -4,8 +4,8 @@ $page='tours';
 $page_title =  $tour_details[0]['tour_name'];
 include("include/header.php");
 ?>
-<div class="container-fluid">
-  <div class="row">
+<div class="container-fluid ">
+  <div class="row image_tur_ban">
     <div class="col-lg-12">
     <img class="banner-image d-none d-sm-block" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_banner_img']; ?>" alt="" width="100%">
     <img class="banner-image-mobile d-block d-sm-none" src="<?php echo base_url(); ?>assets/images/sub_bg/s_img/kashmir_tur2.jpg" alt="" width="100%">
@@ -14,9 +14,7 @@ include("include/header.php");
   </div>
 </div>
 
-<br>
-<br>
-<br>
+
  <!-- sticky navbar -->
 
 <div class="container sticky-cont">
@@ -73,10 +71,10 @@ include("include/header.php");
 <!-- Overview ends -->
 
 <!-- itinarary Start -->
+
   <div class="container" id="itinarary">
     <div class="row border-bottom">
         <h4>Itinarary</h4>
-
     </div>
       <div class="row itinarary-start-row">
           <div class="col-md-8">
@@ -116,6 +114,8 @@ include("include/header.php");
           </div>
       </div>
   </div>
+
+
 <!-- itinarary ends -->
 
 <!-- Inclusion Exclusion start  -->
@@ -142,17 +142,20 @@ include("include/header.php");
   <div class="row">
       <div class="col-md-6">
           <h4 class="border-bottom">Food</h4>
-          <p>All Transfer A/c or Non A/c coach / Vehicle</p>
-          <p>All Transfer A/c or Non A/c coach / Vehicle</p>
-          <p>All Transfer A/c or Non A/c coach / Vehicle</p>
-          <p>All Transfer A/c or Non A/c coach / Vehicle</p>
+          <p>We will be pleased to serve you whole some, hygienic Maharashtra North – Indian and Chinese pure Vegetarian Cuisine includes tea/coffeewith breakfast. Lunch evening Tea
+             or coffee with delicious snacks and dinner. And on the way food will be provide in Dhaba/ Restaurants.</p>
+          <p>Meal Plan: -
+•	EP: Room only
+•	CP: Room + Breakfast
+•	MAP: Room+ Breakfast + Lunch or Dinner
+•	AP: Room + Breakfast + Lunch + Dinner
+</p>
       </div>
       <div class="col-md-6">
           <h4 class="border-bottom">Accomodation</h4>
-          <p>All Transfer A/c or Non A/c coach / Vehicle</p>
-          <p>All Transfer A/c or Non A/c coach / Vehicle</p>
-          <p>All Transfer A/c or Non A/c coach / Vehicle</p>
-          <p>All Transfer A/c or Non A/c coach / Vehicle</p>
+          <p>All accommodation service provide by us region wise Good
+             and Confortable star category Hotels/ Resorts. This is clean and also used by our satisfied customers.</p>
+
       </div>
   </div>
 </div>
@@ -237,7 +240,7 @@ $(document).ready(function () {
 
       $('a').each(function () {
           $(this).removeClass('active');
-          $(this).removeClass('active12');
+          // $(this).removeClass('active12');
       })
       $(this).addClass('active');
 
@@ -245,7 +248,7 @@ $(document).ready(function () {
           menu = target;
       $target = $(target);
       $('html, body').stop().animate({
-          'scrollTop': $target.offset().top+2
+          'scrollTop': $target.offset().top-80
       }, 500, 'swing', function () {
           window.location.hash = target;
           $(document).on("scroll", onScroll);
@@ -300,14 +303,16 @@ $(document).ready(function () {
 
       $('a').each(function () {
           $(this).removeClass('active12');
+          $(this).removeClass('active');
       })
       $(this).addClass('active12');
+      $(this).addClass('active');
 
       var target = this.hash,
           menu = target;
       $target = $(target);
       $('html, body').stop().animate({
-          'scrollTop': $target.offset().top+2
+          'scrollTop': $target.offset().top-80
       }, 500, 'swing', function () {
           window.location.hash = target;
           $(document).on("scroll", onScroll);

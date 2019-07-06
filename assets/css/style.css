@@ -497,10 +497,15 @@ outline: inherit !important;
 }
 .navbar-nav .active{
 	background-color: #fec926!important;
+	border-bottom: 5px solid #fec926;
 }
 .overview{
-	margin-top:30px;
-	margin-bottom: 50px;
+	margin-top:20px;
+	margin-bottom: 10px;
+}
+
+#itinarary{
+	padding-top: 20px;
 }
 
 .border-bottom{
@@ -509,7 +514,7 @@ outline: inherit !important;
 	border-bottom: 1px solid #000 !important;
 }
 .itinarary-start-row{
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 50px;
 }
 
@@ -597,8 +602,12 @@ outline: inherit !important;
 }
 
 .sticky-cont{
-	padding: 0px!important;
+	padding-top: 0px!important;
 	background-color: #fff!important;
+}
+
+.image_tur_ban{
+	padding-bottom: 30px!important;
 }
 
 .sticky-nav-head{
@@ -1999,7 +2008,11 @@ img{
 
 }
 
-
+.banner-image{
+	width: 100%;
+	min-height: 450px;
+	max-height: 550px;
+}
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
