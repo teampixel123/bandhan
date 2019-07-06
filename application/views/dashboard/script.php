@@ -18,6 +18,6 @@
 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script>
    $(function() {
-      $( "#datepicker" ).datepicker({dateFormat: 'dd-mm-yy'});
+      $( "#datepicker" ).datepicker({dateFormat: 'dd M yy'});
    });
 </script>

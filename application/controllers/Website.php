@@ -31,18 +31,17 @@ class Website extends CI_Controller {
     $this->load->view('terms');
   }
 
-  // public function itinerary(){
-  //   $this->load->view('Itinerary');
-  // }
 	// dhananjay website itinerary page
 	public function itinerary_details(){
-		$tour_id = '357986';
+		$tour_id = $this->uri->segment(3);
 		$tour_details = $this->Admin_Model->get_tour_details($tour_id);
 
 		$data['tour_details'] = $tour_details;
 		$data['itinarary_days']=$this->Admin_Model->itinerary_list($tour_id);
 		$data['inclusion_list']=$this->Admin_Model->inclusion_list($tour_id);
 		$data['exclusion_list']=$this->Admin_Model->exclusion_list($tour_id);
+		$data['date_list']=$this->Admin_Model->date_list($tour_id);
+		$data['cost_list']=$this->Admin_Model->cost_list($tour_id);
 		$this->load->view('itinerary.php',$data);
 	}
 
