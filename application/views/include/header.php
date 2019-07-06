@@ -5,7 +5,7 @@ $active='active';
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Welcome | Bandhan Tourism  </title>
+      <title><?php echo $page_title; ?></title>
       <link rel="shortcut icon" href="img/icon.bmp" type="image/x-icon">
     <!-- Latest compiled and minified CSS -->
   <script src="<?php echo base_url('assets/js/jquery-3.2.1.slim.min.js');?>"></script>

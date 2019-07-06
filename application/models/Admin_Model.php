@@ -45,6 +45,7 @@ class Admin_Model extends CI_Model
     $result = $query->result();
     return $result;
   }
+  
   public function get_itinerary_details($itinerary_id){
     $this->db->select('*');
     $this->db->from('itinerary');
