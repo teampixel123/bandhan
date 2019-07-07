@@ -127,7 +127,9 @@ include('include/header.php');
       </div>
     </div>
     <div class="col-md-3">
-
+        <div class="main-heading-link">
+            <h3><b>Other Tours this is tour </b></h3>
+        </div>
     </div>
   </div>
 
@@ -146,7 +148,7 @@ include('include/header.php');
       </div>
     </div>
     <div class="col-md-3">
-      <!-- <img src="<?php echo base_url(); ?>assets/images/Screenshot_3.jpg" alt=""> -->
+      <img src="<?php echo base_url(); ?>assets/images/Screenshot_3.jpg" alt="">
     </div>
   </div>
 </div>
