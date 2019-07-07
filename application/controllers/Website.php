@@ -27,7 +27,11 @@ class Website extends CI_Controller {
     $this->load->view('contact');
   }
 	public function list(){
-    $this->load->view('list_tours');
+		$segment = $this->uri->segment(1);
+		$state = str_replace('-', ' ', $segment);
+		 // echo $state;
+		$data['tour_list'] = $this->Admin_Model->get_tour_menu_list($state);
+    $this->load->view('list_tours',$data);
   }
 
 	public function terms(){
