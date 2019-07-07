@@ -32,61 +32,36 @@ include('include/header.php');
         <h3 style="text-align:left!important;padding-bottom: 25px;"><b>Himachal Pradesh</b></h3>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card"  id="demo">
 
-            <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl5.jpg" alt="Card image cap">
-            <i class="fa fa-eye ml-1 card-icon"  aria-hidden="true" id="show"></i>
-            <div class="card-body">
-              <h5 class="card-title" id="card-text">Assam Special</h5>
-              <div class="row d-flex justify-content-around">
-                  <p class="card-text">Start From</p>
-                  <p class="card-text">City</p>
-                  <p class="card-text">Days</p>
-              </div>
-
-              <div class="row d-flex justify-content-around">
-                  <p class="card-text" style="font-weight:bold;">&#8377;25,000</p>
-                  <p class="card-text" style="font-weight:bold;">8</p>
-                  <p class="card-text" style="font-weight:bold;">10</p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="card"  id="details" style="min-height:495px;">
-            <div class="card-body">
-              <h5 class="card-title" id="card-text">Assam Special</h5>
-              <div class="row d-flex justify-content-around">
-                  <h4>Assam Special</h4>
-                  <i class="fa fa-times" aria-hidden="true" id="hide"></i>
-              </div>
-              <div class="row d-flex justify-content-start mt-2 mb-2">
-                  <h5>Destination Highlights (4)</h5>
-              </div>
-
-              <div class="ml-5 text-bold">
-                <p>Havelock Island </p>
-                <p>Havelock Island </p>
-                <p>Havelock Island </p>
-                <p>Havelock Island </p>
-                <p>Havelock Island </p>
-                <p>Havelock Island </p>
-              </div>
-              <div class="row">
-                <button type="button" class="btn btn-warning btn-block" name="button" >Book Now</button>
-              </div>
-              <div class="row d-flex justify-content-around mt-5">
-                <p><i class="fa fa-bed" aria-hidden="true"></i> Hotel</p>
-                <p><i class="fa fa-plane" aria-hidden="true"></i> plane</p>
-                <p><i class="fa fa-cutlery" aria-hidden="true"></i> Meal</p>
-
+        <?php if($tour_list){
+          foreach ($tour_list as $tour_list) { ?>
+            <div class="col-md-4">
+              <div class="card"  id="demo">
+                <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_list->tour_mobile_img; ?>" alt="Card image cap">
+                <!-- <i class="fa fa-eye ml-1 card-icon"  aria-hidden="true" id="show"></i> -->
+                <div class="card-body">
+                  <h5 class="card-title" id="card-text"><?php echo $tour_list->tour_name; ?></h5>
+                  <div class="row d-flex justify-content-around">
+                      <p class="card-text">Start From</p>
+                      <p class="card-text">City</p>
+                      <p class="card-text">Days</p>
+                  </div>
+                  <div class="row d-flex justify-content-around">
+                      <p class="card-text" style="font-weight:bold;">&#8377;<?php echo $tour_list->tour_price; ?></p>
+                      <p class="card-text" style="font-weight:bold;"><?php echo $tour_list->tour_city_num; ?></p>
+                      <p class="card-text" style="font-weight:bold;"><?php echo $tour_list->tour_day_num; ?></p>
+                  </div>
+                </div>
               </div>
 
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
+        <?php  }
+        } ?>
+
+
+
+
+        <!-- <div class="col-md-4">
           <div class="card">
             <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl4.jpg" alt="Card image cap">
             <div class="card-body" style="top:10%;">
@@ -123,11 +98,11 @@ include('include/header.php');
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="col-md-3">
-      <img width="100" src="<?php echo base_url(); ?>assets/images/Screenshot_3.jpg" alt="">
+      <img width="100%" src="<?php echo base_url(); ?>assets/images/Screenshot_3.jpg" alt="">
     </div>
   </div>
 
@@ -151,20 +126,7 @@ include('include/header.php');
   </div>
 </div>
 
-<script type="text/javascript">
-$(document).ready(function() {
-$("#details").hide();
-$("#show").click(function(){
-$("#demo").hide();
-$("#details").show();
-});
 
-$("#hide").click(function(){
-$("#demo").show();
-$("#details").hide();
-});
-});
-</script>
 
 <?php  include('include/footer.php');
 ?>

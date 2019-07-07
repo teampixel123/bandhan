@@ -88,10 +88,11 @@ $active='active';
               <?php   $title_list = $this->Admin_Model->get_tour_menu_title();
                 foreach ($title_list as $title_list) {
                   $state = $title_list->tour_state;
+                  $state_uri = str_replace(' ','-',$state)
                   ?>
                   <div class="col-lg-3" >
                     <br>
-                    <h5 class="text-black "><?php echo $state; ?></h5>
+                    <h5 class="text-black "><a href="<?php echo base_url() ?><?php echo $state_uri; ?>"><?php echo $state; ?></a></h5>
                     <div class="row margin-small mb-3">
                       <div class="underline-small"></div>
                     </div>
