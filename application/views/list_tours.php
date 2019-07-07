@@ -127,7 +127,7 @@ include('include/header.php');
       </div>
     </div>
     <div class="col-md-3">
-      <img src="<?php echo base_url(); ?>assets/images/Screenshot_3.jpg" alt="">
+      <img width="100" src="<?php echo base_url(); ?>assets/images/Screenshot_3.jpg" alt="">
     </div>
   </div>
 

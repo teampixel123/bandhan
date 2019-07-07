@@ -8,7 +8,10 @@ class Website extends CI_Controller {
     $this->load->helper('string');
     $this->load->Model('Admin_Model');
   }
-
+	public function index()
+	{
+		$this->load->view('home');
+	}
 	public function home()
 	{
 		$this->load->view('home');
