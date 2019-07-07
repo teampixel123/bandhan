@@ -35,7 +35,7 @@
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">State</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <select class="form-control form-control-lg" name="tour_state" id="tour_state">
                           <option><?php echo $tour_details[0]['tour_state']; ?></option>
                           <option>Kashmir</option>
@@ -50,31 +50,37 @@
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Price</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="number" value="<?php echo $tour_details[0]['tour_price']; ?>" class="form-control form-control-sm" name="tour_price" id="tour_price" placeholder="Tour Price" required>
                       </div>
                     </div>
                     <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Price with GST</label>
+                      <div class="col-sm-6">
+                        <input type="number" value="<?php echo $tour_details[0]['tour_price_withgst']; ?>" class="form-control form-control-sm" name="tour_price_withgst" id="tour_price_withgst" placeholder="Tour Price + GST" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Total Number of Cities</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="number" value="<?php echo $tour_details[0]['tour_city_num']; ?>" class="form-control form-control-sm" name="tour_city_num" id="tour_city_num" placeholder="Total Number of Cities" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Total Number of Days</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="number" value="<?php echo $tour_details[0]['tour_day_num']; ?>" class="form-control form-control-sm" name="tour_day_num" id="tour_day_num" placeholder="Total Number of Days" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Tour Start City</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="text" value="<?php echo $tour_details[0]['tour_start_city']; ?>" class="form-control form-control-sm" name="tour_start_city" id="tour_start_city" placeholder="Total Number of Days" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Tour End City</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="text" value="<?php echo $tour_details[0]['tour_end_city']; ?>" class="form-control form-control-sm" name="tour_end_city" id="tour_end_city" placeholder="Total Number of Days" required>
                       </div>
                     </div>
@@ -96,7 +102,7 @@
 
           <!-- Update Image -->
           <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
+            <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title mb-3">Update Tour Image</h4>
@@ -104,17 +110,39 @@
                     <input type="hidden" name="tour_banner_img_old" value="<?php echo $tour_details[0]['tour_banner_img']; ?>">
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Select Image</label>
-                      <div class="col-sm-6">
+                      <div class="col-sm-9">
                         <input type="file" class="form-control form-control-sm" name="tour_banner_img" id="tour_banner_img" placeholder="Total Number of Days" required>
+                        <label for="exampleInputUsername2" class="col-form-label text-left">Select .jpg image</label>
                       </div>
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-left">Select .jpg image</label>
                     </div>
-                    <div class="form-actions mt-4">
+                    <div class="form-actions mt-0">
                       <button type="submit" class="btn btn-primary mr-2">Update Image</button>
                       <button class="btn btn-light">Cancel</button>
                     </div>
                   </form>
                     <img style="width:100%;" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_banner_img']; ?>" alt="image">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Update Mobile Image</h4>
+                  <form class="forms-sample mb-4" action="<?php echo base_url(); ?>Dashboard/update_mobile_image" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="tour_mobile_img_old" value="<?php echo $tour_details[0]['tour_mobile_img']; ?>">
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Select Image</label>
+                      <div class="col-sm-9">
+                        <input type="file" class="form-control form-control-sm" name="tour_mobile_img" id="tour_mobile_img" placeholder="Total Number of Days" required>
+                        <label for="exampleInputUsername2" class="col-form-label text-left">Select .jpg image</label>
+                      </div>
+                    </div>
+                    <div class="form-actions mt-0">
+                      <button type="submit" class="btn btn-primary mr-2">Update Image</button>
+                      <button class="btn btn-light">Cancel</button>
+                    </div>
+                  </form>
+                    <img style="width:100%;" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_mobile_img']; ?>" alt="image">
                 </div>
               </div>
             </div>

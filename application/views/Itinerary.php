@@ -46,10 +46,7 @@ include("include/header.php");
   </div>
 </div>
 </div>
-
-
 <!-- sticky navbar -->
-
   <!-- Overview start-->
   <div class="container overview" id="overview">
       <div class="row">
@@ -67,9 +64,7 @@ include("include/header.php");
           </div>
       </div>
   </div>
-
 <!-- Overview ends -->
-
 <!-- itinarary Start -->
 
   <div class="container" id="itinarary">
@@ -77,39 +72,48 @@ include("include/header.php");
         <h4>Itinarary</h4>
     </div>
       <div class="row itinarary-start-row">
-          <div class="col-md-8">
-            <?php foreach ($itinarary_days as $itinerary_data) { ?>
-              <div class="itinarary-container">
-              <h5>Day<?php echo $itinerary_data->itinerary_day_num;  ?></h5>
-              <h3><?php echo $itinerary_data->itinerary_day_title;  ?></h3>
-              <p><?php echo $itinerary_data->itinerary_day_description;  ?></p>
-              </div>
-              <?php
-                }   ?>
-          </div>
-          <div class="col-md-4">
-            <div class="cost-table">
-              <h4 class="border-bottom text-center" style="margin-bottom :5px!important;">Tour Cost </h4>
-              <h6 class="tour-bcp">PER PERSON EX. GUWAHATI</h6>
-              <h5 class="tour-bcp2">&#8377; 52200 /-<span >+ 5 % GST </span> </h5>
-              <h4 class="final-price">&#8377; 54810/-</h4>
-              <h6>EXTRA ADULT (ABOVE 12 YRS TRIPLE SHARING) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="price-desc"> 38200/-</span></h6>
-              <h6>CHILD WITH BED(5-11YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="price-desc" >34200/-</span></h6>
-              <h6>CHILD WITHOUT BED (5-11YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >30200/-</span></h6>
-              <h6>INFANT ( BELOW 5 YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >6900/-</span></h6>
-              <h6>SINGLE SHARING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >66200/-</span></h6>
+        <div class="col-md-8">
+          <?php foreach ($itinarary_days as $itinerary_data) { ?>
+            <div class="itinarary-container">
+            <h5>Day<?php echo $itinerary_data->itinerary_day_num;  ?></h5>
+            <h3><?php echo $itinerary_data->itinerary_day_title;  ?></h3>
+            <p><?php echo $itinerary_data->itinerary_day_description;  ?></p>
             </div>
+          <?php } ?>
+        </div>
+        <div class="col-md-4">
+          <div class="cost-table">
+            <h4 class="border-bottom text-center" style="margin-bottom :5px!important;">Tour Cost </h4>
+            <h6 class="tour-bcp">Per Person Ex. <?php echo $tour_details[0]['tour_start_city']; ?></h6>
+            <h5 class="tour-bcp2">&#8377; <?php echo $tour_details[0]['tour_price']; ?> /-<span >+ 5 % GST </span> </h5>
+            <h4 class="final-price">&#8377; <?php echo $tour_details[0]['tour_price_withgst']; ?>/-</h4>
+            <?php if($cost_list){ ?>
+              <?php foreach ($cost_list as $cost_list): ?>
+                <h6><?php echo $cost_list->cost_person_type; ?> : <span class="price-desc"> <?php echo $cost_list->cost_rate; ?>/-</span></h6>
+              <?php endforeach; ?>
+            <?php } ?>
+            <!-- <h6>EXTRA ADULT (ABOVE 12 YRS TRIPLE SHARING) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="price-desc"> 38200/-</span></h6>
+            <h6>CHILD WITH BED(5-11YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="price-desc" >34200/-</span></h6>
+            <h6>CHILD WITHOUT BED (5-11YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >30200/-</span></h6>
+            <h6>INFANT ( BELOW 5 YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >6900/-</span></h6>
+            <h6>SINGLE SHARING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >66200/-</span></h6> -->
+          </div>
             <br>
             <br>
             <br>
             <div class="cost-table">
               <h4 class="text-center" style="margin-bottom :15px!important;">Departure Dates </h4>
-              <h4 class="final-price" style="background-color:rgb(128,128,128, 0.5)!important;"> Guwahati to Guwahati</h4>
-              <h6 class="text-center">30 Oct 2019</h6>
+              <h4 class="final-price" style="background-color:rgb(128,128,128, 0.5)!important;"> <?php echo $tour_details[0]['tour_start_city']; ?> to <?php echo $tour_details[0]['tour_end_city']; ?></h4>
+              <?php if($date_list){ ?>
+                <?php foreach ($date_list as $date_list): ?>
+                  <h6 class="text-center"><?php echo $date_list->departure_date; ?></h6>
+                <?php endforeach; ?>
+              <?php } ?>
+              <!-- <h6 class="text-center">30 Oct 2019</h6>
               <h6 class="text-center">1 Nov 2019</h6>
               <h6 class="text-center">25 Nov 2019</h6>
               <h6 class="text-center">1 Dec 2019</h6>
-              <h6 class="text-center">5 Jan 2020</h6>
+              <h6 class="text-center">5 Jan 2020</h6> -->
               </div>
           </div>
       </div>

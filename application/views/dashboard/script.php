@@ -14,3 +14,10 @@
 <!-- End plugin js for this page -->
 <!-- Custom js for this page-->
 <script src="<?php echo base_url(); ?>assets/dashboard/js/dashboard.js"></script>
+
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script>
+   $(function() {
+      $( "#datepicker" ).datepicker({dateFormat: 'dd M yy'});
+   });
+</script>

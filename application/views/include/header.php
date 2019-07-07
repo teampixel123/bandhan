@@ -85,7 +85,35 @@ $active='active';
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <div class="row">
-              <div class="col-lg-3" >
+              <?php   $title_list = $this->Admin_Model->get_tour_menu_title();
+                foreach ($title_list as $title_list) {
+                  $state = $title_list->tour_state;
+                  ?>
+                  <div class="col-lg-3" >
+                    <br>
+                    <h5 class="text-black "><?php echo $state; ?></h5>
+                    <div class="row margin-small mb-3">
+                      <div class="underline-small"></div>
+                    </div>
+                    <?php $menu_list = $this->Admin_Model->get_tour_menu_list($state);
+                      foreach ($menu_list as $menu_list) {
+                    ?>
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list->tour_id; ?><?php  ?>"><?php echo $menu_list->tour_name; ?></a>
+                  <?php } ?>
+                    <!-- <a class="dropdown-item" href="kashmir-sp.php">Best Of Kashmir</a>
+                    <a class="dropdown-item" href="vaishno-kashmir.php">Kashmir with Vishnodevi</a>
+                    <a class="dropdown-item" href="leh-ladakh.php">Special Leh Ladak</a>
+                    <a class="dropdown-item" href="kargil.php">Leh ladak with Kargil</a>
+                    <a class="dropdown-item" href="shimla.php">Shimala Manali Special</a>
+                    <a class="dropdown-item" href="nainital.php">Special Nainital</a>
+                    <a class="dropdown-item" href="bhutan-sp.php">Bhutan Special</a>
+                    <a class="dropdown-item" href="rajasthan-marwad.php">Rajastan Marwad Special </a>
+                    <a class="dropdown-item" href="rajasthan-mewad.php">Rajasthan Mewad Special</a>
+                    <a class="dropdown-item" href="rajasthan.php">Royal Rajastan</a> -->
+                </div>
+
+              <?php } ?>
+              <!-- <div class="col-lg-3" >
                 <br>
                 <h5 class="text-black ">Domestic</h5>
                 <div class="row margin-small mb-3">
@@ -150,7 +178,7 @@ $active='active';
                 <a class="dropdown-item" href="anandvan.php">Anandvan - Hemalkasa </a>
                <a class="dropdown-item" href="melghat.php">Melghat - Chikhaldara </a>
                <a class="dropdown-item" href="snehalay.php">Snehalay - Raleganshidhhi </a>
-              </div>
+              </div> -->
             </div>
           </ul>
         </li>

@@ -48,6 +48,18 @@
           <span class="menu-title">Add Exclusion</span>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/add_cost">
+          <i class="icon-file menu-icon"></i>
+          <span class="menu-title">Add Tour Cost</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/add_date">
+          <i class="icon-file menu-icon"></i>
+          <span class="menu-title">Add Tour Dates</span>
+        </a>
+      </li>
     <?php } ?>
     <!-- <li class="nav-item">
       <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">

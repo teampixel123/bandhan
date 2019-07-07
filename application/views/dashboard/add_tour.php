@@ -34,7 +34,7 @@
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">State</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <select class="form-control form-control-lg" name="tour_state" id="tour_state">
                           <option>Kashmir</option>
                           <option>Rajastan</option>
@@ -48,38 +48,51 @@
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Price</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="number" class="form-control form-control-sm" name="tour_price" id="tour_price" placeholder="Tour Price" required>
                       </div>
                     </div>
                     <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Price with GST</label>
+                      <div class="col-sm-6">
+                        <input type="number" class="form-control form-control-sm" name="tour_price_withgst" id="tour_price_withgst" placeholder="Tour Price + GST" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Total Number of Cities</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="number" class="form-control form-control-sm" name="tour_city_num" id="tour_city_num" placeholder="Total Number of Cities" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Total Number of Days</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="number" class="form-control form-control-sm" name="tour_day_num" id="tour_day_num" placeholder="Total Number of Days" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Tour Start City</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="text" class="form-control form-control-sm" name="tour_start_city" id="tour_start_city" placeholder="Tour Start City" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Tour End City</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-6">
                         <input type="text" class="form-control form-control-sm" name="tour_end_city" id="tour_end_city" placeholder="Tour End City" required>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Select Image</label>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Select Banner Image</label>
                       <div class="col-sm-6">
-                        <input type="file" class="form-control form-control-sm" name="tour_banner_img" id="tour_banner_img" placeholder="Total Number of Days" required>
+                        <input type="file" class="form-control form-control-sm" name="files[0]" id="tour_banner_img" placeholder="Total Number of Days" required>
+                      </div>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-left">Select .jpg image</label>
+                    </div>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Select Mobile Banner Image</label>
+                      <div class="col-sm-6">
+                        <input type="file" class="form-control form-control-sm" name="files[1]" id="tour_mobile_banner_img" placeholder="Total Number of Days" required>
                       </div>
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-left">Select .jpg image</label>
                     </div>
