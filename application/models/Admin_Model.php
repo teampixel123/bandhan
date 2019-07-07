@@ -150,7 +150,7 @@ class Admin_Model extends CI_Model
   }
   public function date_list($tour_id){
     $date = date('d M Y');
-    $query = $this->db->query("select * from tour_dates where str_to_date(departure_date,'%d %M %Y') >= str_to_date('$date','%d %M %Y') order by str_to_date(departure_date,'%d %M %Y') ASC");
+    $query = $this->db->query("select * from tour_dates where str_to_date(departure_date,'%d %M %Y') >= str_to_date('$date','%d %M %Y') and tour_id = '$tour_id' order by str_to_date(departure_date,'%d %M %Y') ASC");
     $result = $query->result();
      return $result;
   }
