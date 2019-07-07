@@ -128,7 +128,7 @@ include('include/header.php');
     </div>
     <div class="col-md-3">
         <div class="main-heading-link">
-            <h3><b>Other Tours this is tour </b></h3>
+            <h3><b>Other Tours </b></h3>
         </div>
     </div>
   </div>
@@ -153,20 +153,7 @@ include('include/header.php');
   </div>
 </div>
 
-<script type="text/javascript">
-$(document).ready(function() {
-$("#details").hide();
-$("#show").click(function(){
-$("#demo").hide();
-$("#details").show();
-});
 
-$("#hide").click(function(){
-$("#demo").show();
-$("#details").hide();
-});
-});
-</script>
 
 <?php  include('include/footer.php');
 ?>
