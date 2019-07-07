@@ -500,17 +500,17 @@ outline: inherit !important;
 	border-bottom: 5px solid #fec926;
 }
 .overview{
-	margin-top:20px;
-	margin-bottom: 10px;
+	padding-top:60px;
+	/* margin-bottom: 10px; */
 }
 
 #itinarary{
-	padding-top: 20px;
+	padding-top: 60px;
 }
 
 .border-bottom{
 	padding-bottom: 10px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	border-bottom: 1px solid #000 !important;
 }
 .itinarary-start-row{
@@ -520,10 +520,16 @@ outline: inherit !important;
 
 .itinarary-container{
 	margin-top: 30px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .inclusion-container{
 	margin-bottom: 50px;
+}
+#inclusion{
+	padding-top: 60px;
+}
+#exclusion{
+	padding-top: 60px;
 }
 .food-container{
 	padding-top: 20px;
@@ -604,6 +610,7 @@ outline: inherit !important;
 .sticky-cont{
 	padding-top: 0px!important;
 	background-color: #fff!important;
+	height: 53px !important;
 }
 
 .image_tur_ban{
@@ -778,7 +785,12 @@ outline: inherit !important;
 	line-height: 27px;
 	border-bottom: 1px solid #212529;
 }
-
+.header-top2 .nav-item{
+	height: 50px !important;
+}
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #000 !important;
+}
 .dropdown-menu a{
 	font-size: 13px;
 	color: #000;
@@ -818,7 +830,8 @@ outline: inherit !important;
 }
 .nav-link:hover{
 	color: rgba(0,0,0,.9) !important;
-	font-weight: 500;
+	border-bottom: 2px solid #000;
+	/* font-weight: 500; */
 }
 
  .active .nav-link {
@@ -3162,6 +3175,14 @@ div.scrollmenu a:hover {
     /* background: #869791; */
     color: #212529;
     text-decoration: none;
+}
+
+
+.paragraph{
+	text-align: justify!important;
+	font-size: 16px;
+	font-family: Muli,sans-serif;
+	font-weight: 200;
 }
 
 /* slider1 */

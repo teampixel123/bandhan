@@ -49,7 +49,7 @@ $active='active';
 
   <!-- Navbar  -->
 
-<div class="container-fluid bg-yellow">
+<div class="container-fluid bg-yellow header-top2">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-yellow ">
           <a class="navbar-brand" href="index.php">
@@ -101,85 +101,8 @@ $active='active';
                     ?>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list->tour_id; ?><?php  ?>"><?php echo $menu_list->tour_name; ?></a>
                   <?php } ?>
-                    <!-- <a class="dropdown-item" href="kashmir-sp.php">Best Of Kashmir</a>
-                    <a class="dropdown-item" href="vaishno-kashmir.php">Kashmir with Vishnodevi</a>
-                    <a class="dropdown-item" href="leh-ladakh.php">Special Leh Ladak</a>
-                    <a class="dropdown-item" href="kargil.php">Leh ladak with Kargil</a>
-                    <a class="dropdown-item" href="shimla.php">Shimala Manali Special</a>
-                    <a class="dropdown-item" href="nainital.php">Special Nainital</a>
-                    <a class="dropdown-item" href="bhutan-sp.php">Bhutan Special</a>
-                    <a class="dropdown-item" href="rajasthan-marwad.php">Rajastan Marwad Special </a>
-                    <a class="dropdown-item" href="rajasthan-mewad.php">Rajasthan Mewad Special</a>
-                    <a class="dropdown-item" href="rajasthan.php">Royal Rajastan</a> -->
                 </div>
-
               <?php } ?>
-              <!-- <div class="col-lg-3" >
-                <br>
-                <h5 class="text-black ">Domestic</h5>
-                <div class="row margin-small mb-3">
-                  <div class="underline-small"></div>
-                </div>
-                <a class="dropdown-item" href="kashmir-sp.php">Best Of Kashmir</a>
-                <a class="dropdown-item" href="vaishno-kashmir.php">Kashmir with Vishnodevi</a>
-                <a class="dropdown-item" href="leh-ladakh.php">Special Leh Ladak</a>
-                <a class="dropdown-item" href="kargil.php">Leh ladak with Kargil</a>
-                <a class="dropdown-item" href="shimla.php">Shimala Manali Special</a>
-                <a class="dropdown-item" href="nainital.php">Special Nainital</a>
-                <a class="dropdown-item" href="bhutan-sp.php">Bhutan Special</a>
-                <a class="dropdown-item" href="rajasthan-marwad.php">Rajastan Marwad Special </a>
-                <a class="dropdown-item" href="rajasthan-mewad.php">Rajasthan Mewad Special</a>
-                <a class="dropdown-item" href="rajasthan.php">Royal Rajastan</a>
-            </div>
-              <div class="col-lg-3">
-                  <h5 class="text-black text-center"> <br> </h5>
-                <a class="dropdown-item " href="all_gujarat.php">Sampurn Gujrath</a>
-                <a class="dropdown-item" href="gujarat.php">Gujarat Rann Utsav</a>
-                <a class="dropdown-item" href="statue-unity.php">Statue of Unity special</a>
-                <a class="dropdown-item" href="mini_mp.php">Mini Madhya Pradesh </a>
-                <a class="dropdown-item" href="mp.php">Madhya Pradesh Highlights</a>
-                <a class="dropdown-item" href="all_mp.php">Golden Madhya Pradesh</a>
-                <a class="dropdown-item" href="khajuraho.php"> Chitrakoot Khajuraho</a>
-                <a class="dropdown-item" href="karnataka.php">Costal Karnataka</a>
-                <a class="dropdown-item" href="banglore.php">Banglore Mysore  Ooty Kodaicanal</a>
-                <a class="dropdown-item" href="hampi.php">Mazical Hampi Badami </a>
-            </div>
-              <div class="col-lg-3">
-                  <h5 class="text-black text-center"> <br> </h5>
-                <a class="dropdown-item" href="kerala-sp.php"> Kerala Special</a>
-                <a class="dropdown-item" href="kerala.php">Kerala with Kanyakumari</a>
-                <a class="dropdown-item" href="kerala-mini.php">Mini Kerala</a>
-                <a class="dropdown-item" href="andaman.php">Andaman</a>
-                <br>
-                <h4 class="text-black ">International</h4>
-                <div class="row margin-small mb-3">
-                  <div class="underline-small"></div>
-                </div>
-                <a class="dropdown-item" href="singapore.php">Singapore </a>
-                <a class="dropdown-item" href="bali.php">Amazing Bali </a>
-                <a class="dropdown-item" href="bangkok.php">Bangkok </a>
-                <a class="dropdown-item" href="dubai.php">Dubai </a>
-                <a class="dropdown-item" href="malaysia.php">Singapore Malaysia </a>
-              </div>
-              <div class="col-lg-3">
-                <br>
-                <h5 class="text-black ">Northeast</h5>
-                <div class="row margin-small mb-3">
-                  <div class="underline-small"></div>
-                </div>
-                <a class="dropdown-item" href="assam.php">Assam Special </a>
-                <a class="dropdown-item" href="sikkim.php">Sikkim - Darjeeling </a>
-                <a class="dropdown-item" href="three-sisters.php">Assam - Meghalay <br> Arunachal Pradesh </a>
-                <a class="dropdown-item" href="two-sisters.php">Assam - Meghalaya </a>
-                <br>
-                <h4 class="text-black ">Social</h4>
-                <div class="row margin-small mb-3">
-                  <div class="underline-small"></div>
-                </div>
-                <a class="dropdown-item" href="anandvan.php">Anandvan - Hemalkasa </a>
-               <a class="dropdown-item" href="melghat.php">Melghat - Chikhaldara </a>
-               <a class="dropdown-item" href="snehalay.php">Snehalay - Raleganshidhhi </a>
-              </div> -->
             </div>
           </ul>
         </li>
