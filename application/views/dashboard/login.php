@@ -15,11 +15,11 @@
               </div>
               <h4>Hello! let's get started</h4>
               <h6 class="font-weight-light">Sign in to continue.</h6>
-              <form action="<?php echo base_url(); ?>Check-Login" class="pt-3" method="post">
+              <form action="<?php echo base_url(); ?>Check-Login" class="pt-3" method="post" autocomplete="off">
                 <div class="form-group">
                   <input type="text" name="username" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-3">
                   <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                 </div>
                 <div class="mt-3">

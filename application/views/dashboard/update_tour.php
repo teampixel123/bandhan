@@ -38,13 +38,19 @@
                       <div class="col-sm-6">
                         <select class="form-control form-control-lg" name="tour_state" id="tour_state">
                           <option><?php echo $tour_details[0]['tour_state']; ?></option>
-                          <option>Kashmir</option>
+                          <option>Bhutan</option>
+                          <option>Sikkim</option>
+                          <option>North East</option>
                           <option>Rajastan</option>
                           <option>Kerala</option>
                           <option>Madhya Pradesh</option>
-                          <option>Gujarat</option>
+                          <option>Odisa</option>
+                          <option>Uttaranchal</option>
+                          <option>Kashmir</option>
+                          <option>Leh</option>
                           <option>Karnataka</option>
-                          <option>Northeast</option>
+                          <option>Telangana</option>
+                          <option>Himachal Pradesh</option>
                         </select>
                       </div>
                     </div>
