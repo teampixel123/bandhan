@@ -12,9 +12,6 @@ include("include/header.php");
     </div>
     </div>
 </div>
-
-
-
  <!-- sticky navbar -->
 
 <div class="container sticky-cont">

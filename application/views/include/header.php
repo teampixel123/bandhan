@@ -62,10 +62,10 @@ $active='active';
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item <?php if($page=='home'){ echo $active; }?>">
-          <a class="nav-link" href="<?php echo base_url(); ?>Website/home">Home </a>
+          <a class="nav-link" href="<?php echo base_url(); ?>">Home </a>
         </li>
         <li class="nav-item <?php if($page=='about'){ echo $active; }?>">
-          <a class="nav-link" href="<?php echo base_url(); ?>Website/about">About Us</a>
+          <a class="nav-link" href="<?php echo base_url(); ?>About-Us">About Us</a>
         </li>
         <li class="nav-item <?php if($page=='domestic'){ echo $active; }?> d-block d-sm-none">
           <a class="nav-link" href="domestic_list.php">Domestic</a>
@@ -88,18 +88,20 @@ $active='active';
               <?php   $title_list = $this->Admin_Model->get_tour_menu_title();
                 foreach ($title_list as $title_list) {
                   $state = $title_list->tour_state;
-                  $state_uri = str_replace(' ','-',$state)
+                  $state_uri = str_replace(' ','-',$state);
                   ?>
                   <div class="col-lg-3" >
                     <br>
-                    <h5 class="text-black "><a href="<?php echo base_url() ?><?php echo $state_uri; ?>"><?php echo $state; ?></a></h5>
+                    <h5 class="text-black "><a href="<?php echo base_url() ?>Tour-List/<?php echo $state_uri; ?>"><?php echo $state; ?></a></h5>
                     <div class="row margin-small mb-3">
                       <div class="underline-small"></div>
                     </div>
                     <?php $menu_list = $this->Admin_Model->get_tour_menu_list($state);
                       foreach ($menu_list as $menu_list) {
+                        $tour_nm = $menu_list->tour_name;
+                        $tour_name = str_replace(' ','-',$tour_nm);
                     ?>
-                    <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list->tour_id; ?><?php  ?>"><?php echo $menu_list->tour_name; ?></a>
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list->tour_id; ?>/<?php echo $state_uri; ?>/<?php echo $tour_name; ?><?php  ?>"><?php echo $menu_list->tour_name; ?></a>
                   <?php } ?>
                 </div>
               <?php } ?>
@@ -107,7 +109,7 @@ $active='active';
           </ul>
         </li>
          <li class="nav-item <?php if($page=='contact'){ echo $active; }?>">
-          <a class="nav-link" href="<?php echo base_url(); ?>Website/contact">Contact  </a>
+          <a class="nav-link" href="<?php echo base_url(); ?>Contact">Contact  </a>
         </li>
      </ul>
       </div>

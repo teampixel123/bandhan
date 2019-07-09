@@ -29,7 +29,7 @@ include('include/header.php');
   <div class="row" style="padding-top: 40px;margin:0px;">
     <div class="col-md-9">
       <div class="row">
-        <h3 style="text-align:left!important;padding-bottom: 25px;"><b>Himachal Pradesh</b></h3>
+        <h3 style="text-align:left!important;padding-bottom: 25px;"><b><?php echo $state2; ?></b></h3>
       </div>
       <div class="row">
 
