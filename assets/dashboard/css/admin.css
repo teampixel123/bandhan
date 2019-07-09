@@ -22,14 +22,14 @@
     vertical-align: middle;
 }
 .navbar .navbar-brand-wrapper{
-  background: #fec926 !important;
+  background: #164e8a !important;
 }
 .sidebar {
-  background: #fec926 !important;
+  background: #164e8a !important;
 }
 .sidebar .nav .nav-item:first-child .nav-link {
-    border-top: 1px solid #fec926;
+    border-top: 1px solid #164e8a;
 }
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
-    border-top: 1px solid #fec926;
+    border-top: 1px solid #164e8a;
 }
