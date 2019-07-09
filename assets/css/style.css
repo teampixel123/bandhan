@@ -472,8 +472,28 @@ outline: inherit !important;
   color: white;
   font-size: 24px;
   font-weight: bold;
-  left: 50px;
-  top: 310px;
+  left: 5%;
+  bottom : 25%;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.list-container{
+	margin-top:20px!important;
+	margin-bottom:80px!important;
+	padding:20px!important;
+}
+
+.list-title{
+	padding-top: 40px;
+	padding-left: 10px;
+}
+
+#list-row{
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+.card-body{
+	padding: 5px!important;
 }
 
 .card-icon {
