@@ -93,14 +93,14 @@
                       <div class="col-sm-6">
                         <input type="file" class="form-control form-control-sm" name="files[0]" id="tour_banner_img" placeholder="Total Number of Days" required>
                       </div>
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-left">Select .jpg image</label>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-left">Select 1920*600 .jpg image</label>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Select Mobile Banner Image</label>
                       <div class="col-sm-6">
                         <input type="file" class="form-control form-control-sm" name="files[1]" id="tour_mobile_banner_img" placeholder="Total Number of Days" required>
                       </div>
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-left">Select .jpg image</label>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-left">Select 500*320 .jpg image</label>
                     </div>
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">Overview</label>

@@ -17,9 +17,15 @@
             <div class="col-sm-12 mb-4 mb-xl-0">
               <h4 class="font-weight-bold text-dark">Dashboard</h4>
               <p class="font-weight-normal mb-2 text-muted"><?php echo date('d F Y'); ?></p>
+
             </div>
+            <div class="col-sm-12 text-center mt-5">
+                <img src="<?php echo base_url(); ?>assets/images/logo_dash.png" alt="" >
+            </div>
+
           </div>
         </div>
+
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <?php include('footer.php'); ?>
