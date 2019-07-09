@@ -54,9 +54,12 @@ $route['Tour-List/(:any)'] = 'Website/list/$1';
 $route['Tour/(:any)'] = 'Website/itinerary_details2/$1/$1';
 $route['About-Us'] = 'Website/about';
 $route['Contact'] = 'Website/contact';
+$route['Admin-Login'] = 'Website/load_login';
+$route['Check-Login'] = 'Website/check_login';
 
 // $route['(:any)/(:any)'] = 'Website/itinerary_details2/$1/$1';
-
+$route['Admin-Dashboard'] = 'Dashboard/home';
+$route['Admin-Logout'] = 'Dashboard/logout';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

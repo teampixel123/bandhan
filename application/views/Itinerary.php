@@ -56,8 +56,8 @@ include("include/header.php");
           <div class="col-md-4 align-self-center">
             <img class="img-iti-svg" src="<?php echo base_url(); ?>assets/images/shape.svg" alt="" >
             <div class="text-on-svg">
-              <h4 class="border-bottom"> <strong>Cities 03</strong></h4>
-              <h4> <strong>Days 13</strong></h4>
+              <h4 class="border-bottom"> <strong>Cities <?php echo $tour_details[0]['tour_city_num']; ?></strong></h4>
+              <h4> <strong>Days <?php echo $tour_details[0]['tour_day_num']; ?></strong></h4>
             </div>
           </div>
       </div>

@@ -178,6 +178,25 @@ class Admin_Model extends CI_Model
     $result = $query->result();
     return $result;
   }
+
+  public function check_login($username,$password){
+    $query = $this->db->select('admin_id')
+      ->from('admin')
+      ->where('username',$username)
+      ->where('password',$password)
+      ->get();
+    $result = $query->result_array();
+    return $result;
+  }
+
+  public function admin_details($admin_id){
+    $query = $this->db->select('*')
+      ->from('admin')
+      ->where('admin_id',$admin_id)
+      ->get();
+    $result = $query->result_array();
+    return $result;
+  }
 }
 
  ?>

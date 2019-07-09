@@ -1,62 +1,62 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <div class="user-profile">
-    <div class="user-image">
+    <!-- <div class="user-image">
       <img src="images/faces/face28.png">
-    </div>
+    </div> -->
     <div class="user-name">
-        Edward Spencer
+        <?php echo $admin_details[0]['admin_name']; ?>
     </div>
     <div class="user-designation">
-        Developer
+        <?php echo $admin_details[0]['admin_roll']; ?>
     </div>
   </div>
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/home">
+      <a class="nav-link" href="<?php echo base_url(); ?>Admin-Dashboard">
         <i class="icon-box menu-icon"></i>
         <span class="menu-title">Dashboard</span>
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/add_tour">
-        <i class="icon-file menu-icon"></i>
+        <i class="fa fa-edit menu-icon"></i>
         <span class="menu-title">Add New Tour</span>
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/tour_list">
-        <i class="icon-file menu-icon"></i>
+        <i class="fa fa-list menu-icon"></i>
         <span class="menu-title">Tour List</span>
       </a>
     </li>
     <?php if($this->session->userdata('tour_id')){ ?>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/add_itinerary">
-          <i class="icon-file menu-icon"></i>
+          <i class="fa fa-edit menu-icon"></i>
           <span class="menu-title">Add Itinerary</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/add_inclusion">
-          <i class="icon-file menu-icon"></i>
+          <i class="fa fa-edit menu-icon"></i>
           <span class="menu-title">Add Inclusion</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/add_exclusion">
-          <i class="icon-file menu-icon"></i>
+          <i class="fa fa-edit menu-icon"></i>
           <span class="menu-title">Add Exclusion</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/add_cost">
-          <i class="icon-file menu-icon"></i>
+          <i class="fa fa-money menu-icon"></i>
           <span class="menu-title">Add Tour Cost</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>Dashboard/add_date">
-          <i class="icon-file menu-icon"></i>
+          <i class="fa fa-calendar menu-icon"></i>
           <span class="menu-title">Add Tour Dates</span>
         </a>
       </li>

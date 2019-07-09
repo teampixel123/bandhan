@@ -16,12 +16,9 @@
           <div class="row">
             <div class="col-sm-12 mb-4 mb-xl-0">
               <h4 class="font-weight-bold text-dark">Dashboard</h4>
-              <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p>
+              <p class="font-weight-normal mb-2 text-muted"><?php echo date('d F Y'); ?></p>
             </div>
           </div>
-
-
-
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
