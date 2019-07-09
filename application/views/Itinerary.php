@@ -46,8 +46,8 @@ include("include/header.php");
 <!-- sticky navbar -->
   <!-- Overview start-->
   <div class="container overview" id="overview">
-    <div class="row border-bottom">
-        <h4>Overview</h4>
+    <div class="row">
+        <h4></h4>
     </div>
       <div class="row">
           <div class="col-md-8 mt-3">
