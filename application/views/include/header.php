@@ -67,10 +67,10 @@ $active='active';
         <li class="nav-item <?php if($page=='about'){ echo $active; }?>">
           <a class="nav-link" href="<?php echo base_url(); ?>About-Us">About Us</a>
         </li>
-        <li class="nav-item <?php if($page=='domestic'){ echo $active; }?> d-block d-sm-none">
-          <a class="nav-link" href="domestic_list.php">Domestic</a>
+        <li class="nav-item <?php if($page=='tours'){ echo $active; }?> d-block d-sm-none">
+          <a class="nav-link" href="<?php echo base_url(); ?>Website/tour_menu_mobile">Tours</a>
         </li>
-        <li class="nav-item <?php if($page=='international'){ echo $active; }?> d-block d-sm-none ">
+        <!-- <li class="nav-item <?php if($page=='international'){ echo $active; }?> d-block d-sm-none ">
           <a class="nav-link" href="international_list.php">International</a>
         </li>
         <li class="nav-item <?php if($page=='northeast'){ echo $active; }?> d-block d-sm-none ">
@@ -78,9 +78,9 @@ $active='active';
         </li>
         <li class="nav-item <?php if($page=='social'){ echo $active; }?> d-block d-sm-none ">
           <a class="nav-link" href="social_list.php">Social</a>
-        </li>
-      <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle d-none d-sm-block" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </li> -->
+      <li class="nav-item dropdown d-none d-sm-block">
+          <a class="nav-link dropdown-toggle " href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Tours
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -90,10 +90,10 @@ $active='active';
                   $state = $title_list->tour_state;
                   $state_uri = str_replace(' ','-',$state);
                   ?>
-                  <div class="col-lg-3" >
-                    <br>
-                    <a href="<?php echo base_url() ?>Tour-List/<?php echo $state_uri; ?>"><h5 class="text-black "><?php echo $state; ?></h5></a>
-                    <div class="row margin-small mb-3">
+                  <div class="col-lg-2" >
+                    <!-- <br> -->
+                    <a href="<?php echo base_url() ?>Tour-List/<?php echo $state_uri; ?>"><h6 class="text-black tour-title"><?php echo $state; ?></h6></a>
+                    <div class="row margin-small mb-1">
                       <div class="underline-small"></div>
                     </div>
                     <?php $menu_list = $this->Admin_Model->get_tour_menu_list($state);
@@ -101,7 +101,7 @@ $active='active';
                         $tour_nm = $menu_list->tour_name;
                         $tour_name = str_replace(' ','-',$tour_nm);
                     ?>
-                    <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list->tour_id; ?>/<?php echo $state_uri; ?>/<?php echo $tour_name; ?><?php  ?>"><?php echo $menu_list->tour_name; ?></a>
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list->tour_id; ?>/<?php echo $state_uri; ?>/<?php echo $tour_name; ?>"><?php echo $menu_list->tour_name; ?></a>
                   <?php } ?>
                 </div>
               <?php } ?>

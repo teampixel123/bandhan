@@ -19,6 +19,7 @@
               <!-- <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p> -->
             </div>
           </div>
+          <div id="delete_msg" class="alert alert-danger" style="display:none;" role="alert"></div>
           <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
@@ -66,8 +67,35 @@
                                 </div>
                                 <div class="col-md-4">
                                   <button type="button" style="width:30px; height:30px; padding:0px;" class="btn btn-sm btn-light btn-rounded btn-fw" data-toggle="modal" data-target="#myModal_<?php echo $tour_list->tour_id; ?>"><i class="fa fa-trash" style="color:red;"></i></button>
+                                  <!-- <form class="" action="<?php echo base_url() ?>Dashboard/delete_tour" method="post">
+                                    <input type="hidden" class="tour_id" name="tour_id" value="<?php echo $tour_list->tour_id; ?>">
+                                    <button type="submit" style="width:30px; height:30px; padding:0px;" class="btn btn-sm btn-light btn-rounded btn-fw" data-toggle="modal" data-target="#myModal_<?php echo $tour_list->tour_id; ?>"><i class="fa fa-trash" style="color:red;"></i></button>
+                                  </form> -->
                                 </div>
                               </div>
+                              <!-- Modal -->
+                              <div id="myModal_<?php echo $tour_list->tour_id; ?>" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">Delete Tour</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>do you want to delete this tour</p>
+                                      <p>Day <?php echo $tour_list->tour_name; ?> - <?php echo $tour_list->tour_state; ?></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <form class="" action="<?php echo base_url() ?>Dashboard/delete_tour" method="post">
+                                        <input type="hidden" class="tour_id" name="tour_id" value="<?php echo $tour_list->tour_id; ?>">
+                                        <button type="submit" class="btn btn-danger">Yes</button>
+                                      </form>
+                                      <button type="button" class="btn btn-info" data-dismiss="modal">No</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Modal End -->
                             </td>
                           </tr>
                         <?php  } ?>
@@ -91,6 +119,14 @@
   <!-- container-scroller -->
 
 <?php include('script.php'); ?>
+<?php if($this->session->flashdata('status_deleted')){ ?>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#delete_msg').html('<b>Tour Deleted</b> Tour and all related information deleted successfully');
+      $('#delete_msg').show().delay('10000').fadeOut();
+    });
+  </script>
+<?php } ?>
   <!-- End custom js for this page-->
 </body>
 

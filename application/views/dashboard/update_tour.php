@@ -16,7 +16,6 @@
           <div class="row">
             <div class="col-sm-12 mb-xl-0">
               <h4 class="font-weight-bold text-dark mb-4">Update Tour</h4>
-              <!-- <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p> -->
             </div>
           </div>
           <div id="tour_update_error" class="alert alert-danger" style="display:none;"  role="alert"></div>
@@ -38,19 +37,32 @@
                       <div class="col-sm-6">
                         <select class="form-control form-control-lg" name="tour_state" id="tour_state">
                           <option><?php echo $tour_details[0]['tour_state']; ?></option>
+                          <option>Andhra Pradesh</option>
+                          <option>Andaman Islands</option>
+                          <option>Arunachal Pradesh</option>
                           <option>Bhutan</option>
-                          <option>Sikkim</option>
-                          <option>North East</option>
-                          <option>Rajastan</option>
+                          <option>Bihar</option>
+                          <option>Chhattisgarh</option>
+                          <option>Goa</option>
+                          <option>Gujarat</option>
+                          <option>Himachal Pradesh</option>
+                          <option>International</option>
+                          <option>Jammu and Kashmir</option>
+                          <option>Jharkhand</option>
+                          <option>Karnataka</option>
                           <option>Kerala</option>
                           <option>Madhya Pradesh</option>
-                          <option>Odisa</option>
-                          <option>Uttaranchal</option>
-                          <option>Kashmir</option>
-                          <option>Leh</option>
-                          <option>Karnataka</option>
+                          <option>Maharashtra</option>
+                          <option>North East</option>
+                          <option>Odisha</option>
+                          <option>Punjab</option>
+                          <option>Rajasthan</option>
+                          <option>Sikkim</option>
+                          <option>Tamil Nadu</option>
                           <option>Telangana</option>
-                          <option>Himachal Pradesh</option>
+                          <option>Uttar Pradesh</option>
+                          <option>Uttarakhand</option>
+                          <option>West Bengal</option>
                         </select>
                       </div>
                     </div>

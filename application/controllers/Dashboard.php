@@ -266,6 +266,26 @@ class Dashboard extends CI_Controller{
     }
   }
 
+  public function delete_tour(){
+    $admin_id = $this->session->userdata('admin_id');
+    if($admin_id){
+      $tour_id = $this->input->post('tour_id');
+      $tour_details = $this->Admin_Model->get_tour_details($tour_id);
+      if($tour_details){
+        echo $banner_image = $tour_details[0]['tour_banner_img'];
+        echo $mobile_image = $tour_details[0]['tour_mobile_img'];
+        unlink("assets/images/tours/".$banner_image);
+        unlink("assets/images/tours/".$mobile_image);
+      }
+      $del =  $this->Admin_Model->delete_tour($tour_id);
+      $this->session->set_flashdata('status_deleted','tour_deleted');
+      header('location:'.base_url().'Dashboard/tour_list');
+    }
+    else{
+      header('location:'.base_url().'Admin-Login');
+    }
+  }
+
   /******************************* Itinerary *************************************/
   // Add Itinerary View...
   public function add_itinerary(){

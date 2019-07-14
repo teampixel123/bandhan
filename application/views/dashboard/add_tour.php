@@ -36,19 +36,32 @@
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label text-right">State</label>
                       <div class="col-sm-6">
                         <select class="form-control form-control-lg" name="tour_state" id="tour_state">
+                          <option>Andhra Pradesh</option>
+                          <option>Andaman Islands</option>
+                          <option>Arunachal Pradesh</option>
                           <option>Bhutan</option>
-                          <option>Sikkim</option>
-                          <option>North East</option>
-                          <option>Rajastan</option>
+                          <option>Bihar</option>
+                          <option>Chhattisgarh</option>
+                          <option>Goa</option>
+                          <option>Gujarat</option>
+                          <option>Himachal Pradesh</option>
+                          <option>International</option>
+                          <option>Jammu and Kashmir</option>
+                          <option>Jharkhand</option>
+                          <option>Karnataka</option>
                           <option>Kerala</option>
                           <option>Madhya Pradesh</option>
-                          <option>Odisa</option>
-                          <option>Uttaranchal</option>
-                          <option>Kashmir</option>
-                          <option>Leh</option>
-                          <option>Karnataka</option>
+                          <option>Maharashtra</option>
+                          <option>North East</option>
+                          <option>Odisha</option>
+                          <option>Punjab</option>
+                          <option>Rajasthan</option>
+                          <option>Sikkim</option>
+                          <option>Tamil Nadu</option>
                           <option>Telangana</option>
-                          <option>Himachal Pradesh</option>
+                          <option>Uttar Pradesh</option>
+                          <option>Uttarakhand</option>
+                          <option>West Bengal</option>
                         </select>
                       </div>
                     </div>

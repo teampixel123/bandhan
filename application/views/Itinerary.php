@@ -8,7 +8,7 @@ include("include/header.php");
   <div class="row image_tur_ban">
     <div class="col-lg-12">
     <img class="banner-image d-none d-sm-block" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_banner_img']; ?>" alt="" width="100%">
-    <img class="banner-image-mobile d-block d-sm-none" src="<?php echo base_url(); ?>assets/images/sub_bg/s_img/kashmir_tur2.jpg" alt="" width="100%">
+    <img class="banner-image-mobile d-block d-sm-none" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_mobile_img']; ?>" alt="" width="100%">
     </div>
     </div>
 </div>
@@ -80,39 +80,29 @@ include("include/header.php");
           <?php } ?>
         </div>
         <div class="col-md-4">
+          <?php if($cost_list){ ?>
           <div class="cost-table">
             <h4 class="border-bottom text-center" style="margin-bottom :5px!important;">Tour Cost </h4>
             <h6 class="tour-bcp">Per Person Ex. <?php echo $tour_details[0]['tour_start_city']; ?></h6>
             <h5 class="tour-bcp2">&#8377; <?php echo $tour_details[0]['tour_price']; ?> /-<span >+ 5 % GST </span> </h5>
             <h4 class="final-price">&#8377; <?php echo $tour_details[0]['tour_price_withgst']; ?>/-</h4>
-            <?php if($cost_list){ ?>
               <?php foreach ($cost_list as $cost_list): ?>
                 <h6><?php echo $cost_list->cost_person_type; ?> : <span class="price-desc"> <?php echo $cost_list->cost_rate; ?>/-</span></h6>
               <?php endforeach; ?>
-            <?php } ?>
-            <!-- <h6>EXTRA ADULT (ABOVE 12 YRS TRIPLE SHARING) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="price-desc"> 38200/-</span></h6>
-            <h6>CHILD WITH BED(5-11YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="price-desc" >34200/-</span></h6>
-            <h6>CHILD WITHOUT BED (5-11YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >30200/-</span></h6>
-            <h6>INFANT ( BELOW 5 YRS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >6900/-</span></h6>
-            <h6>SINGLE SHARING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="price-desc" >66200/-</span></h6> -->
           </div>
+          <?php } ?>
             <br>
             <br>
             <br>
+            <?php if($date_list){ ?>
             <div class="cost-table">
               <h4 class="text-center" style="margin-bottom :15px!important;">Departure Dates </h4>
               <h4 class="final-price" style="background-color:rgb(128,128,128, 0.5)!important;"> <?php echo $tour_details[0]['tour_start_city']; ?> to <?php echo $tour_details[0]['tour_end_city']; ?></h4>
-              <?php if($date_list){ ?>
                 <?php foreach ($date_list as $date_list): ?>
                   <h6 class="text-center"><?php echo $date_list->departure_date; ?></h6>
                 <?php endforeach; ?>
-              <?php } ?>
-              <!-- <h6 class="text-center">30 Oct 2019</h6>
-              <h6 class="text-center">1 Nov 2019</h6>
-              <h6 class="text-center">25 Nov 2019</h6>
-              <h6 class="text-center">1 Dec 2019</h6>
-              <h6 class="text-center">5 Jan 2020</h6> -->
               </div>
+            <?php } ?>
           </div>
       </div>
   </div>
@@ -146,14 +136,14 @@ include("include/header.php");
           <h4 class="border-bottom">Food</h4>
           <p>We will be pleased to serve you whole some, hygienic Maharashtra North – Indian and Chinese pure Vegetarian Cuisine includes tea/coffeewith breakfast. Lunch evening Tea
              or coffee with delicious snacks and dinner. And on the way food will be provide in Dhaba/ Restaurants.</p>
-          <p class="mb-0">Meal Plan: -
+          <!-- <p class="mb-0">Meal Plan: -
             <ul class="paragraph">
               <li>EP: Room only</li>
               <li>CP: Room + Breakfast</li>
               <li>MAP: Room+ Breakfast + Lunch or Dinner</li>
               <li>AP: Room + Breakfast + Lunch + Dinner</li>
             </ul>
-          </p>
+          </p> -->
       </div>
       <div class="col-md-6">
           <h4 class="border-bottom">Accomodation</h4>

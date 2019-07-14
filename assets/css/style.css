@@ -553,7 +553,7 @@ outline: inherit !important;
 }
 .food-container{
 	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 0px;
 }
 .escort-container{
 	padding-top: 20px;
@@ -793,19 +793,19 @@ outline: inherit !important;
     height: auto ;
 		background-color: #fff;
 		/* margin-top: 13px; */
-		right: 0 !important;
+		right: -100px !important;
 		left: auto !important;
-		width: 1000px;
+		width: 1200px;
 		position: absolute!important;
 		color: #000;
 }
 .list{
-
 	color: #212529!important;
 	text-align: left!important;
 	font-family: 'Muli', sans-serif!important;
 	line-height: 27px;
 	border-bottom: 1px solid #212529;
+	font-size: 14px;
 }
 .header-top2 .nav-item{
 	height: 50px !important;
@@ -1575,7 +1575,10 @@ color: grey;
 	margin-top: 15px!important ;
 }
 
+.tour-title{
+	font-size: 13px!important;
 
+}
 
 }
 /* Responsive columns */
@@ -2023,10 +2026,9 @@ img{
 
 
 .dropdown-menu  {
-    width:300px ;
+    width:350px ;
     height: auto ;
 		background-color: #fff;
-
 }
 .dropdown-menu a{
 	color: #000;

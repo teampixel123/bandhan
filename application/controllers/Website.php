@@ -8,18 +8,15 @@ class Website extends CI_Controller {
     $this->load->helper('string');
     $this->load->Model('Admin_Model');
   }
-	public function index()
-	{
+	public function index(){
 		$this->session->unset_userdata('itinerary');
 		$this->load->view('home');
 	}
-	public function home()
-	{
+	public function home(){
 		$this->session->unset_userdata('itinerary');
 		$this->load->view('home');
 	}
-	public function home2()
-	{
+	public function home2(){
 		$this->load->view('home2');
 	}
   public function about(){
@@ -42,10 +39,11 @@ class Website extends CI_Controller {
 	public function terms(){
     $this->load->view('terms');
   }
-
+	public function tour_menu_mobile(){
+		$this->load->view('include/tour_menu_mobile');
+	}
 	// dhananjay website itinerary page
 	public function itinerary_details(){
-
 		$tour_id = $this->uri->segment(3);
 		$state = $this->uri->segment(4);
 		$tour_name = $this->uri->segment(5);

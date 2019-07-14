@@ -31,6 +31,12 @@ class Admin_Model extends CI_Model
     $result = $query->result();
     return $result;
   }
+  public function delete_tour($tour_id){
+    $tables = array('tours', 'itinerary', 'inclusion', 'exclusion','tour_cost', '	tour_dates');
+      $this->db->where('tour_id',$tour_id);
+      $del=$this->db->delete($tables);
+      return $del;
+  }
 
   public function save_itinerary($itinerary_data){
     $this->db->insert('itinerary',$itinerary_data);
@@ -160,9 +166,9 @@ class Admin_Model extends CI_Model
   }
 
   public function get_tour_menu_title(){
-    $this->db->select('*');
+    $this->db->select('tour_state, count(tour_state)');
     $this->db->from('tours');
-    $this->db->order_by('id','ASC');
+     $this->db->order_by('count(tour_state)','DESC');
     $this->db->group_by('tour_state');
     $query = $this->db->get();
     $result = $query->result();
@@ -173,7 +179,7 @@ class Admin_Model extends CI_Model
     $this->db->select('*');
     $this->db->from('tours');
     $this->db->where('tour_state',$state);
-    $this->db->order_by('id','ASC');
+    $this->db->order_by('tour_state','ASC');
     $query = $this->db->get();
     $result = $query->result();
     return $result;
