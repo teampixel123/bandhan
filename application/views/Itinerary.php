@@ -84,8 +84,8 @@ include("include/header.php");
           <div class="cost-table">
             <h4 class="border-bottom text-center" style="margin-bottom :5px!important;">Tour Cost </h4>
             <h6 class="tour-bcp">Per Person Ex. <?php echo $tour_details[0]['tour_start_city']; ?></h6>
-            <h5 class="tour-bcp2">&#8377; <?php echo $tour_details[0]['tour_price']; ?> /-<span >+ 5 % GST </span> </h5>
-            <h4 class="final-price">&#8377; <?php echo $tour_details[0]['tour_price_withgst']; ?>/-</h4>
+            <!-- <h5 class="tour-bcp2">&#8377; <?php echo $tour_details[0]['tour_price']; ?> /-<span >+ 5 % GST </span> </h5> -->
+            <h4 class="final-price">&#8377; <?php echo $tour_details[0]['tour_price']; ?>/-</h4>
               <?php foreach ($cost_list as $cost_list): ?>
                 <h6><?php echo $cost_list->cost_person_type; ?> : <span class="price-desc"> <?php echo $cost_list->cost_rate; ?>/-</span></h6>
               <?php endforeach; ?>
