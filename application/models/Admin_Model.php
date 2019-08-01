@@ -168,7 +168,8 @@ class Admin_Model extends CI_Model
   public function get_tour_menu_title(){
     $this->db->select('tour_state, count(tour_state)');
     $this->db->from('tours');
-     $this->db->order_by('count(tour_state)','DESC');
+    // $this->db->order_by('tour_state','ASC');
+     // $this->db->order_by('count(tour_state)','DESC');
     $this->db->group_by('tour_state');
     $query = $this->db->get();
     $result = $query->result();

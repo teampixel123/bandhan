@@ -7,10 +7,10 @@ include("include/header.php");
 <div class="container-fluid it-banner">
   <div class="row image_tur_ban">
     <div class="col-lg-12">
-    <img class="banner-image d-none d-sm-block" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_banner_img']; ?>" alt="" width="100%">
-    <img class="banner-image-mobile d-block d-sm-none" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_mobile_img']; ?>" alt="" width="100%">
+      <img class="banner-image d-none d-sm-block" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_banner_img']; ?>" alt="" width="100%">
+      <img class="banner-image-mobile d-block d-sm-none" src="<?php echo base_url(); ?>assets/images/tours/<?php echo $tour_details[0]['tour_mobile_img']; ?>" alt="" width="100%">
     </div>
-    </div>
+  </div>
 </div>
  <!-- sticky navbar -->
 
@@ -20,9 +20,9 @@ include("include/header.php");
     <nav class="navbar navbar-expand-sm  d-none d-sm-block" id="menu-center">
        <!-- Links -->
        <ul class="navbar-nav">
-         <li class="nav-item">
+         <!-- <li class="nav-item">
            <a class="nav-link sticky-nav-head active" href="#overview" >Overview</a>
-         </li>
+         </li> -->
          <li class="nav-item">
            <a class="nav-link sticky-nav-head" href="#itinarary" >Itinerary</a>
          </li>
@@ -35,7 +35,7 @@ include("include/header.php");
        </ul>
       </nav>
       <div class="scrollmenu d-block d-sm-none" id="menu-center1">
-          <a class="active" href="#overview" >Overview</a>
+          <!-- <a class="active" href="#overview" >Overview</a> -->
           <a href="#itinarary" >Itinerary</a>
           <a href="#inclusion" >Inclusions</a>
           <a href="#exclusion" >Exclusions</a>
@@ -45,7 +45,7 @@ include("include/header.php");
 </div>
 <!-- sticky navbar -->
   <!-- Overview start-->
-  <div class="container overview" id="overview">
+  <!-- <div class="container overview" id="overview">
     <div class="row">
         <h4></h4>
     </div>
@@ -61,7 +61,7 @@ include("include/header.php");
             </div>
           </div>
       </div>
-  </div>
+  </div> -->
 <!-- Overview ends -->
 <!-- itinarary Start -->
 
@@ -84,8 +84,8 @@ include("include/header.php");
           <div class="cost-table">
             <h4 class="border-bottom text-center" style="margin-bottom :5px!important;">Tour Cost </h4>
             <h6 class="tour-bcp">Per Person Ex. <?php echo $tour_details[0]['tour_start_city']; ?></h6>
-            <h5 class="tour-bcp2">&#8377; <?php echo $tour_details[0]['tour_price']; ?> /-<span >+ 5 % GST </span> </h5>
-            <h4 class="final-price">&#8377; <?php echo $tour_details[0]['tour_price_withgst']; ?>/-</h4>
+            <!-- <h5 class="tour-bcp2">&#8377; <?php echo $tour_details[0]['tour_price']; ?> /-<span >+ 5 % GST </span> </h5> -->
+            <h4 class="final-price">&#8377; <?php echo $tour_details[0]['tour_price']; ?>/- <sup>*</sup></h4>
               <?php foreach ($cost_list as $cost_list): ?>
                 <h6><?php echo $cost_list->cost_person_type; ?> : <span class="price-desc"> <?php echo $cost_list->cost_rate; ?>/-</span></h6>
               <?php endforeach; ?>

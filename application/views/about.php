@@ -6,7 +6,7 @@ include("include/header.php");
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-12">
-      <img class="sub_banner26" >
+      <img class="about_banner" >
     </div>
   </div>
 </div>

@@ -17,10 +17,10 @@ $active1='currentLink';
           <div class="col-md-3 center d-none d-sm-block">
               <h5 class=" white-light">Recent Tours</h5>
               <div class="underline-grey" ></div>
-             <a href="assam.php" class="link-page1"><p class="bottom-border">  ASSAM SPECIAL</p></a>
-              <a href="sikkim.php" class="link-page1" ><p class="bottom-border" >SIKKIM DARJEELING</p></a>
-              <a href="two-sisters.php" class="link-page1" ><p class="bottom-border" >ASSAM, MEGHALAYA</p></a>
-              <a href="kashmir-sp.php" class="link-page1" ><p class="bottom-border" >BEST OF KASHMIR</p></a>
+             <a href="<?php echo base_url(); ?>Website/itinerary_details/254137/Gujarat/Statue-Of-Unity-" class="link-page1"><p class="bottom-border">Statue Of Unity</p></a>
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/172934/Sikkim/Sikkim-With-Darjeeling" class="link-page1" ><p class="bottom-border" >Sikkim Darjeeling</p></a>
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/246831/North-East/Assam---Meghalaya" class="link-page1" ><p class="bottom-border" >Assam - Meghalaya</p></a>
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/712489/Jammu-and-Kashmir/Best-Of-kashmir" class="link-page1" ><p class="bottom-border" >Best Of kashmir</p></a>
             </div>
 
 
@@ -61,14 +61,14 @@ $active1='currentLink';
           <div class="underline-grey " ></div>
           </div>
           <div >
-          <a href="kashmir-sp.php">
+          <a href="<?php echo base_url(); ?>Website/itinerary_details/712489/Jammu-and-Kashmir/Best-Of-kashmir">
           <button class="btn btn-outline-warning mt-1">kashmir</button></a>
-           <a href="gujarat.php"><button class="btn btn-outline-warning mt-1">Gujarat</button></a>
-           <a href="rajasthan.php"><button class="btn btn-outline-warning mt-1">Royal Rajasthan</button></a>
-           <a href="kerala-sp.php"> <button class="btn btn-outline-warning mt-1">Kerala</button></a>
-            <a href="banglore.php"><button class="btn btn-outline-warning mt-1">Banglore</button></a>
-            <a href="singapore.php"><button class="btn btn-outline-warning mt-1">Singapore</button></a>
-            <a href="dubai.php"><button class="btn btn-outline-warning mt-1">Dubai</button></a>
+           <a href="<?php echo base_url(); ?>Website/itinerary_details/149582/Gujarat/Gujarat"><button class="btn btn-outline-warning mt-1">Gujarat</button></a>
+           <a href="<?php echo base_url(); ?>Website/itinerary_details/235618/Rajasthan/Sampoorna-Rajasthan"><button class="btn btn-outline-warning mt-1">Royal Rajasthan</button></a>
+           <a href="<?php echo base_url(); ?>Website/itinerary_details/426537/Kerala/Mini-Kerala-"> <button class="btn btn-outline-warning mt-1">Kerala</button></a>
+            <a href="<?php echo base_url(); ?>Website/itinerary_details/168942/Karnataka/Mysore-Ooty-Bangalore"><button class="btn btn-outline-warning mt-1">Banglore</button></a>
+            <a href="<?php echo base_url(); ?>Website/itinerary_details/935821/International/Singapore"><button class="btn btn-outline-warning mt-1">Singapore</button></a>
+            <a href="<?php echo base_url(); ?>Website/itinerary_details/324681/International/Dubai-With-Abu-Dabi"><button class="btn btn-outline-warning mt-1">Dubai</button></a>
           </div>
           <p class="pt-1"></p>
           <div class="pt-5">

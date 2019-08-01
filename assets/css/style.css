@@ -793,11 +793,19 @@ outline: inherit !important;
     height: auto ;
 		background-color: #fff;
 		/* margin-top: 13px; */
-		right: -100px !important;
+		right: 0 !important;
 		left: auto !important;
-		width: 1200px;
+		width: 1000px;
 		position: absolute!important;
 		color: #000;
+}
+#tour_dropdown .card-columns {
+	column-count: 5 !important;
+}
+#tour_dropdown .card {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	border: none !important;
 }
 .list{
 	color: #212529!important;
@@ -841,19 +849,28 @@ outline: inherit !important;
 
 
 .btn-outline-primary{
-	border-color: #4e5e6f!important;
+	border-color: #4e5e6f !important;
+	color: #fff !important;
+	background-color: #39488a !important;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #38478ae8 !important;
+    border-color: #38478ae8 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: #000000eb;
      letter-spacing: 1px;
-
-
 }
 .nav-link:hover{
 	color: rgba(0,0,0,.9) !important;
 	border-bottom: 2px solid #000;
 	/* font-weight: 500; */
+}
+
+.nav-link-pills:hover{
+		border-bottom: 1px solid #000 !important;
 }
 
  .active .nav-link {
@@ -909,10 +926,7 @@ outline: inherit !important;
 	/* color: grey; */
 	margin-left: 8px;
 	font-size: 21px;
-
 }
-
-
 
 .text-b{
 	color: #164e8a;
@@ -2165,7 +2179,7 @@ div.scrollmenu a:hover {
 }
 /* main banner */
 .banner1 {
-    background:url(../images/bg_img/assam1.jpg) no-repeat top center;
+    background:url(../images/banner/banner_desktop_1.jpg) no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2174,13 +2188,11 @@ div.scrollmenu a:hover {
     min-height:450px;
 		width: 100%;
     position: relative;
-		-webkit-animation: zoom 15s;
-	  animation: zoom 15s;
 }
 
 @media only screen and (max-width: 700px) {
 .banner1 {
-	background:url(../images/bg_img/slide_m_01.jpg) no-repeat top center;
+	background:url(../images/banner/banner_mob_1.jpg) no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -2193,7 +2205,7 @@ div.scrollmenu a:hover {
 }
 
 .banner2 {
-    background:url(../images/bg_img/slid_3.jpg) no-repeat top center;
+    background:url(../images/banner/banner_desktop_2.jpg) no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2202,13 +2214,11 @@ div.scrollmenu a:hover {
     min-height:450px;
 		width: 100%;
     position: relative;
-		-webkit-animation: zoom 15s;
-		animation: zoom 15s;
 }
 
 @media only screen and (max-width: 700px) {
 .banner2 {
-	background:url(../images/bg_img/silde_m_3.jpg) no-repeat top center;
+	background:url(../images/banner/banner_mob_2.jpg) no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -2222,7 +2232,7 @@ div.scrollmenu a:hover {
 
 
 .banner3 {
-    background:url(../images/bg_img/silde_2.jpg) no-repeat top center;
+    background:url(../images/banner/banner_desktop_3.jpg) no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2231,13 +2241,11 @@ div.scrollmenu a:hover {
     min-height:450px;
 		width: 100%;
     position: relative;
-		-webkit-animation: zoom 15s;
-		animation: zoom 15s;
 }
 
 @media only screen and (max-width: 700px) {
 .banner3 {
-	background:url(../images/bg_img/slide_m_02.jpg) no-repeat top center;
+	background:url(../images/banner/banner_mob_3.jpg) no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -2248,6 +2256,38 @@ div.scrollmenu a:hover {
 	position: relative;
   }
 }
+
+.about_banner {
+	/* height:50%; */
+	background:url(../images/banner/about_banner_desktop.gif) no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	min-height:350px;
+	width: 100%;
+	position: relative;
+
+}
+
+@media only screen and (max-width: 700px) {
+.about_banner {
+	/* height:50%; */
+	background:url(../images/banner/about_banner_mob.jpg) no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	min-height:200px;
+	width: 100%;
+	position: relative;
+
+}
+
+
+
 
 @media only screen and (max-width: 700px) {
 .sub_bg_banner {
@@ -2329,12 +2369,6 @@ div.scrollmenu a:hover {
 		top: 86%;
 		font-size:15px;
 }
-}
-
-.btn-outline-primary {
-    color: #fff !important;
-		background-color: #39488a;
-		  /* background-color: #3c4b8c !important; */
 }
 
 @media only screen and (max-width: 700px) {
@@ -3101,34 +3135,7 @@ div.scrollmenu a:hover {
 }
 
 
-.sub_banner26 {
-	/* height:50%; */
-	background:url(../images/sub_bg/Image2.gif) no-repeat top center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	background-size: cover;
-	min-height:350px;
-	width: 100%;
-	position: relative;
 
-}
-
-@media only screen and (max-width: 700px) {
-.sub_banner26 {
-	/* height:50%; */
-	background:url(../images/sub_bg/s_img/compose.jpg) no-repeat top center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	background-size: cover;
-	min-height:200px;
-	width: 100%;
-	position: relative;
-
-}
 
 .underline-yellow{
 	width: 100%;
@@ -3190,11 +3197,7 @@ div.scrollmenu a:hover {
 	margin-top: 20px;
 }
 
-.btn-outline-primary:hover {
-    color: #fff;
-    background-color: #38478ae8;
-    border-color: #38478ae8;
-}
+
 
 .owl-theme .owl-nav:hover {
     /* background: #869791; */
