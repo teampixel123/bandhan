@@ -32,15 +32,15 @@ include('include/header.php');
    </div>
    </a>
   </div>
-  <div class="carousel-item ">
+  <!-- <div class="carousel-item ">
     <a href="#">
     <div class="banner3 ">
     <!-- <div class="carousel-caption heartBeat  ">
       <img class="b1 img-responsive center-block " src="<?php echo base_url(); ?>assets/images/bg_img/Tour-03.png" alt="First slide">
-    </div> -->
+    </div> --
   </div>
   </a>
- </div>
+ </div> -->
 </div>
   <!-- Prev-Next Buttons -->
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
