@@ -133,7 +133,7 @@ include("include/header.php");
 <div class="container food-container bg-yellow" >
   <div class="row">
       <div class="col-md-6">
-          <h4 class="border-bottom">Food</h4>
+          <h4 class="border-bottom"><i class="fa fa-cutlery" aria-hidden="true"></i> Food</h4>
           <p>We will be pleased to serve you whole some, hygienic Maharashtra North – Indian and Chinese pure Vegetarian Cuisine includes tea/coffeewith breakfast. Lunch evening Tea
              or coffee with delicious snacks and dinner. And on the way food will be provide in Dhaba/ Restaurants.</p>
           <!-- <p class="mb-0">Meal Plan: -
@@ -146,7 +146,7 @@ include("include/header.php");
           </p> -->
       </div>
       <div class="col-md-6">
-          <h4 class="border-bottom">Accomodation</h4>
+          <h4 class="border-bottom"><i class="fa fa-bed" aria-hidden="true"></i> Accommodation</h4>
           <p>All accommodation service provide by us region wise Good
              and Confortable star category Hotels/ Resorts. This is clean and also used by our satisfied customers.</p>
 
@@ -158,12 +158,12 @@ include("include/header.php");
 <div class="container escort-container bg-yellow" >
   <div class="row">
       <div class="col-md-6">
-          <h4 class="border-bottom">Transfers and Sightseeing</h4>
+          <h4 class="border-bottom"><i class="fa fa-car" aria-hidden="true"></i> Transfers and Sightseeing</h4>
           <p>From Ex. Destination all transfers are provided by Good Condition vehicle as per group size.
             And trying to cover all major Sightseeing in every destination.</p>
       </div>
       <div class="col-md-6">
-          <h4 class="border-bottom" >Tour Escort</h4>
+          <h4 class="border-bottom" ><i class="fa fa-user" aria-hidden="true"></i> Tour Escort</h4>
           <p>An experienced Escort with every group</p>
       </div>
   </div>

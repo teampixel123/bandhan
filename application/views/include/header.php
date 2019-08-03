@@ -40,7 +40,7 @@ $active='active';
         <a target="_blank" href="https://www.instagram.com/bandhantourism/" class="instagram" >  <i class="fa fa-instagram grey"></i></a>
        <a target="_blank" href="https://www.youtube.com/channel/UCfo3jzDxgy1G_iXFGokzIpA" class="youtube" >  <i class="fa fa-youtube-square grey"></i></a>
         </p>
-        <p class="d-block d-sm-none  "> <a href="tel:+91 231 2692134"> <i class="fa fa-phone text-b right" aria-hidden="true"></i></a></p>
+        <p class="d-block d-sm-none  "> <a href="tel:+919422332610"> <i class="fa fa-phone text-b right" aria-hidden="true"></i></a></p>
 
       </div>
     </div>
@@ -79,6 +79,40 @@ $active='active';
         <li class="nav-item <?php if($page=='social'){ echo $active; }?> d-block d-sm-none ">
           <a class="nav-link" href="social_list.php">Social</a>
         </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            North East
+          </a>
+          <div class="dropdown-menu dropdown-menu2" aria-labelledby="navbarDropdownMenuLink">
+            <?php
+            $state = 'North East';
+            $menu_list1 = $this->Admin_Model->get_tour_menu_list($state);
+              foreach ($menu_list1 as $menu_list1) {
+                $tour_nm = $menu_list1->tour_name;
+                $tour_name = str_replace(' ','-',$tour_nm);
+            ?>
+              <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list1->tour_id; ?>/<?php echo $state; ?>/<?php echo $tour_name; ?>"><?php echo $menu_list1->tour_name; ?></a>
+            <?php } ?>
+            <?php
+            $state = 'Bhutan';
+            $menu_list2 = $this->Admin_Model->get_tour_menu_list($state);
+              foreach ($menu_list2 as $menu_list2) {
+                $tour_nm = $menu_list2->tour_name;
+                $tour_name = str_replace(' ','-',$tour_nm);
+            ?>
+              <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list2->tour_id; ?>/<?php echo $state; ?>/<?php echo $tour_name; ?>"><?php echo $menu_list2->tour_name; ?></a>
+            <?php } ?>
+            <?php
+            $state = 'Sikkim';
+            $menu_list3 = $this->Admin_Model->get_tour_menu_list($state);
+              foreach ($menu_list3 as $menu_list3) {
+                $tour_nm = $menu_list3->tour_name;
+                $tour_name = str_replace(' ','-',$tour_nm);
+            ?>
+              <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list3->tour_id; ?>/<?php echo $state; ?>/<?php echo $tour_name; ?>"><?php echo $menu_list3->tour_name; ?></a>
+            <?php } ?>
+          </div>
+        </li>
       <li class="nav-item dropdown d-none d-sm-block">
           <a class="nav-link dropdown-toggle " href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Tours
@@ -107,32 +141,7 @@ $active='active';
               </div>
               <?php } ?>
             </div>
-
-
-
             </div>
-            <!-- <div class="row">
-              <?php   $title_list = $this->Admin_Model->get_tour_menu_title();
-                foreach ($title_list as $title_list) {
-                  $state = $title_list->tour_state;
-                  $state_uri = str_replace(' ','-',$state);
-                  ?>
-                  <div class="col-lg-2" >
-
-                    <a href="<?php echo base_url() ?>Tour-List/<?php echo $state_uri; ?>"><h6 class="text-black tour-title"><?php echo $state; ?></h6></a>
-                    <div class="row margin-small mb-1">
-                      <div class="underline-small"></div>
-                    </div>
-                    <?php $menu_list = $this->Admin_Model->get_tour_menu_list($state);
-                      foreach ($menu_list as $menu_list) {
-                        $tour_nm = $menu_list->tour_name;
-                        $tour_name = str_replace(' ','-',$tour_nm);
-                    ?>
-                    <a class="dropdown-item" href="<?php echo base_url(); ?>Website/itinerary_details/<?php echo $menu_list->tour_id; ?>/<?php echo $state_uri; ?>/<?php echo $tour_name; ?>"><?php echo $menu_list->tour_name; ?></a>
-                  <?php } ?>
-                </div>
-              <?php } ?>
-            </div> -->
           </ul>
         </li>
          <li class="nav-item <?php if($page=='contact'){ echo $active; }?>">

@@ -779,7 +779,10 @@ outline: inherit !important;
   display: block;
 	border-radius: inherit;
 }
-
+.dropdown:hover>.dropdown-menu2 {
+  display: block;
+	border-radius: inherit;
+}
 
 
 .carousel-caption > h1{
@@ -798,6 +801,15 @@ outline: inherit !important;
 		width: 1000px;
 		position: absolute!important;
 		color: #000;
+}
+.dropdown-menu2{
+	width:200px !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.dropdown-menu2 a{
+	font-size: 14px !important;
+	padding-bottom: 5px !important;
 }
 #tour_dropdown .card-columns {
 	column-count: 5 !important;
@@ -2185,7 +2197,7 @@ div.scrollmenu a:hover {
     -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
-    min-height:600px;
+    min-height:460px;
 		width: 100%;
     position: relative;
 }
@@ -2211,7 +2223,7 @@ div.scrollmenu a:hover {
     -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
-    min-height:600px;
+    min-height:460px;
 		width: 100%;
     position: relative;
 }
@@ -2238,7 +2250,7 @@ div.scrollmenu a:hover {
     -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
-    min-height:450px;
+    min-height:460px;
 		width: 100%;
     position: relative;
 }
