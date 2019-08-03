@@ -20,28 +20,19 @@ $active1='currentLink';
              <a href="<?php echo base_url(); ?>Website/itinerary_details/254137/Gujarat/Statue-Of-Unity-" class="link-page1"><p class="bottom-border">Statue Of Unity</p></a>
               <a href="<?php echo base_url(); ?>Website/itinerary_details/172934/Sikkim/Sikkim-With-Darjeeling" class="link-page1" ><p class="bottom-border" >Sikkim Darjeeling</p></a>
               <a href="<?php echo base_url(); ?>Website/itinerary_details/246831/North-East/Assam---Meghalaya" class="link-page1" ><p class="bottom-border" >Assam - Meghalaya</p></a>
-              <a href="<?php echo base_url(); ?>Website/itinerary_details/712489/Jammu-and-Kashmir/Best-Of-kashmir" class="link-page1" ><p class="bottom-border" >Best Of kashmir</p></a>
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/493156/North East/Four-Sisters-" class="link-page1" ><p class="bottom-border" >Four Sisters</p></a>
             </div>
 
 
 
           <div class="col-md-5 center text-footer-grey">
-            <h5 class="center white-light">Kolhapur Office</h5>
-            <div class="underline-grey " ></div>
-               <p class="pt-1 foot-center">522/1,
-                      ‘E’ Ward,
-                      Near Pratibha Nagar,
-                      Kolhapur-416008
 
-                <i class="fa fa-phone " aria-hidden="true">&nbsp;&nbsp;+91&nbsp; 231&nbsp;&nbsp; 2692134</i>
-              <i class="fa fa-mobile ml-3 mr-1" aria-hidden="true">&nbsp;&nbsp;+91&nbsp;9422332610</i>
-                <i class="fa fa-mobile" aria-hidden="true">&nbsp;&nbsp;+91&nbsp;9422332675</i></p>
               <h5 class="center white-light">Mumbai Office</h5>
               <div class="underline-grey center" ></div>
                   <p class="pt-1 foot-center">Onyx Society,
                       Opposite D’Mart,
                       Godrej Hills, Khadakpada,
-                      Kalyan(West)-421301 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;&nbsp;+91&nbsp;&nbsp;8275143034</i> </span></p>
+                      Kalyan(West)-421301 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;&nbsp;+91&nbsp;&nbsp;9422332610</i> </span></p>
 
 
                     <h5 class="center white-light">Pune Office</h5>
@@ -51,6 +42,16 @@ $active1='currentLink';
                                   Shanivar Peth,
                                   Pune 411030 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;+91&nbsp;9422332675</i> </span></p>
 
+                                  <h5 class="center white-light">Kolhapur Office</h5>
+                                  <div class="underline-grey " ></div>
+                                     <p class="pt-1 foot-center">522/1,
+                                            ‘E’ Ward,
+                                            Near Pratibha Nagar,
+                                            Kolhapur-416008
+
+                                      <i class="fa fa-phone " aria-hidden="true">&nbsp;&nbsp;+91&nbsp; 231&nbsp;&nbsp; 2692134</i>
+                                    <i class="fa fa-mobile ml-3 mr-1" aria-hidden="true">&nbsp;&nbsp;+91&nbsp;8275143034</i>
+                                      <i class="fa fa-mobile" aria-hidden="true">&nbsp;&nbsp;+91&nbsp;9422332675</i></p>
 
           </div>
           <div class="col-md-4 center">
@@ -61,14 +62,14 @@ $active1='currentLink';
           <div class="underline-grey " ></div>
           </div>
           <div >
-          <a href="<?php echo base_url(); ?>Website/itinerary_details/712489/Jammu-and-Kashmir/Best-Of-kashmir">
-          <button class="btn btn-outline-warning mt-1">kashmir</button></a>
+          <a href="<?php echo base_url(); ?>Website/itinerary_details/426537/Kerala/Mini-Kerala-">
+          <button class="btn btn-outline-warning mt-1">Mini Kerala</button></a>
            <a href="<?php echo base_url(); ?>Website/itinerary_details/149582/Gujarat/Gujarat"><button class="btn btn-outline-warning mt-1">Gujarat</button></a>
            <a href="<?php echo base_url(); ?>Website/itinerary_details/235618/Rajasthan/Sampoorna-Rajasthan"><button class="btn btn-outline-warning mt-1">Royal Rajasthan</button></a>
-           <a href="<?php echo base_url(); ?>Website/itinerary_details/426537/Kerala/Mini-Kerala-"> <button class="btn btn-outline-warning mt-1">Kerala</button></a>
-            <a href="<?php echo base_url(); ?>Website/itinerary_details/168942/Karnataka/Mysore-Ooty-Bangalore"><button class="btn btn-outline-warning mt-1">Banglore</button></a>
+           <a href="<?php echo base_url(); ?>Website/itinerary_details/468531/Madhya-Pradesh/Golden-Madhya-Pradesh"><button class="btn btn-outline-warning mt-1">Golden MP</button></a>
+           <a href="<?php echo base_url(); ?>Website/itinerary_details/523189/Odisha/Odisha"> <button class="btn btn-outline-warning mt-1">Odisha</button></a>
             <a href="<?php echo base_url(); ?>Website/itinerary_details/935821/International/Singapore"><button class="btn btn-outline-warning mt-1">Singapore</button></a>
-            <a href="<?php echo base_url(); ?>Website/itinerary_details/324681/International/Dubai-With-Abu-Dabi"><button class="btn btn-outline-warning mt-1">Dubai</button></a>
+            <!-- <a href="<?php echo base_url(); ?>Website/itinerary_details/324681/International/Dubai-With-Abu-Dabi"><button class="btn btn-outline-warning mt-1">Dubai</button></a> -->
           </div>
           <p class="pt-1"></p>
           <div class="pt-5">
@@ -120,7 +121,7 @@ $active1='currentLink';
       </div>
 
       <div class="col-lg-2 center">
-        <a href="<?php echo base_url();?>Website/terms" class="mt-2"> <p class="text-bottom-footer">Terms & Conditions</p></a>
+        <a href="<?php echo base_url();?>Website/terms" class="mt-2"> <p class="text-bottom-footer center">Terms & Conditions</p></a>
       </div>
     </div>
   </div>

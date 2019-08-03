@@ -34,7 +34,7 @@ $active='active';
         <div class="col-md-12 float-right">
       <p class="top-header d-none d-sm-block">
         <i class="fa fa-mobile grey text-b" aria-hidden="true"></i>
-            &nbsp; 94 2233 2610
+            &nbsp; +91 9422332610
         <a target="_blank" href="https://www.facebook.com/Bandhan-Tourism-588031544923443/" class="facebook"> <i class="fa fa-facebook-square grey ml-3" aria-hidden="true"></i></a>
         <a target="_blank" href="https://twitter.com/bandhan_tourism" class="twitter">  <i class="fa fa-twitter-square  grey"></i></a>
         <a target="_blank" href="https://www.instagram.com/bandhantourism/" class="instagram" >  <i class="fa fa-instagram grey"></i></a>

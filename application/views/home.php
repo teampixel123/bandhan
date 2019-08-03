@@ -79,7 +79,7 @@ include('include/header.php');
               <div class="card" >
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl5.jpg" width="100%" alt="Card image cap">
                   <div class="card-img-overlay">
-                    <h3 class="card-title text-white">Bangkok</h3>
+                    <h3 class="card-title text-white" >Bangkok</h3>
                   </div>
               </div>
               </a>
@@ -95,31 +95,31 @@ include('include/header.php');
               </a>
             </div>
             <div class="item">
-              <a href="<?php echo base_url(); ?>Website/itinerary_details/712489/Jammu-and-Kashmir/Best-Of-kashmir">
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/523189/Odisha/Odisha">
               <div class="card" >
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl7.jpg" width="100%" alt="Card image cap">
                   <div class="card-img-overlay">
-                    <h3 class="card-title text-white">Kashmir </h3>
+                    <h3 class="card-title text-white" >Odisha </h3>
                   </div>
               </div>
               </a>
             </div>
             <div class="item">
-              <a href="<?php echo base_url(); ?>Website/itinerary_details/935821/International/Singapore">
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/254137/Gujarat/Statue-Of-Unity-">
               <div class="card" >
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl1.jpg" width="100%" alt="Card image cap">
                   <div class="card-img-overlay">
-                    <h3 class="card-title text-white">Singapore</h3>
+                    <h3 class="card-title text-white">Statue Of Unity</h3>
                   </div>
               </div>
             </a>
             </div>
             <div class="item">
-              <a href="<?php echo base_url(); ?>Website/itinerary_details/149582/Gujarat/Gujarat">
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/178642/Bhutan/Amazing-Bhutan">
               <div class="card" >
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl3.jpg" width="100%" alt="Card image cap">
                   <div class="card-img-overlay">
-                    <h3 class="card-title text-white">Rann Utsav</h3>
+                    <h3 class="card-title text-white">Bhutan</h3>
                   </div>
               </div>
               </a>
@@ -182,7 +182,7 @@ include('include/header.php');
                   <div class=" col-md-6 col-sm-6 col-xs-12 ">
                     <a href="<?php echo base_url(); ?>Website/itinerary_details/752986/Andaman-Islands/Discover-Anandman">
                       <div class="hovereffect">
-                        <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/domestic_tour1.jpg" alt="">
+                        <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/andman.jpg" alt="">
                         <div class="overlay">
                           <h2>Andaman</h2>
                           <a class="info" href="<?php echo base_url(); ?>Website/itinerary_details/752986/Andaman-Islands/Discover-Anandman">View More</a>
@@ -191,12 +191,12 @@ include('include/header.php');
                     </a>
                   </div>
                   <div class=" col-md-6 col-sm-6 col-xs-12">
-                    <a href="<?php echo base_url(); ?>Website/itinerary_details/712489/Jammu-and-Kashmir/Best-Of-kashmir">
+                    <a href="<?php echo base_url(); ?>Website/itinerary_details/698713/Karnataka/Historical-Karnataka">
                       <div class="hovereffect">
-                        <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/domestic_tour2.jpg" alt="">
+                        <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/karnatka.jpg" alt="">
                         <div class="overlay">
-                          <h2>Best of Kashmir</h2>
-                          <a class="info" href="<?php echo base_url(); ?>Website/itinerary_details/712489/Jammu-and-Kashmir/Best-Of-kashmir">View More</a>
+                          <h2>Historical Karnataka</h2>
+                          <a class="info" href="<?php echo base_url(); ?>Website/itinerary_details/698713/Karnataka/Historical-Karnataka">View More</a>
                         </div>
                       </div>
                     </a>
@@ -218,12 +218,12 @@ include('include/header.php');
                   </a>
                 </div>
                 <div class=" col-md-6 col-sm-6 col-xs-12">
-                  <a href="<?php echo base_url(); ?>Website/itinerary_details/182364/Himachal-Pradesh/Chandigarh-Shimla-Manali">
+                  <a href="<?php echo base_url(); ?>Website/itinerary_details/426537/Kerala/Mini-Kerala-">
                     <div class="hovereffect">
-                      <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/domestic_tour4.jpg" alt="">
+                      <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/kerala.jpg" alt="">
                       <div class="overlay">
-                        <h2>Shimala Manali Special</h2>
-                        <a class="info" href="<?php echo base_url(); ?>Website/itinerary_details/182364/Himachal-Pradesh/Chandigarh-Shimla-Manali">View More</a>
+                        <h2>Mini Kerala</h2>
+                        <a class="info" href="<?php echo base_url(); ?>Website/itinerary_details/426537/Kerala/Mini-Kerala-">View More</a>
                       </div>
                     </div>
                   </a>
@@ -233,12 +233,12 @@ include('include/header.php');
             <div class="row">
               <div class="row">
                 <div class=" col-md-6 col-sm-6 col-xs-12 ">
-                  <a href="<?php echo base_url(); ?>Website/itinerary_details/852493/Jammu-and-Kashmir/Kashmir-with-Vaishnodevi">
+                  <a href="<?php echo base_url(); ?>Website/itinerary_details/182974/Madhya-Pradesh/Madhya-Pradesh--Highlights">
                     <div class="hovereffect">
-                      <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/domestic_tour9.jpg" alt="">
+                      <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/mp.jpg" alt="">
                       <div class="overlay">
-                        <h2>Kashmir With Vaishno Devi </h2>
-                        <a class="info" href="<?php echo base_url(); ?>Website/itinerary_details/852493/Jammu-and-Kashmir/Kashmir-with-Vaishnodevi">View More</a>
+                        <h2>Madhya Pradesh  Highlights</h2>
+                        <a class="info" href="<?php echo base_url(); ?>Website/itinerary_details/182974/Madhya-Pradesh/Madhya-Pradesh--Highlights">View More</a>
                       </div>
                     </div></a>
                   </div>
@@ -334,11 +334,11 @@ include('include/header.php');
                 <div data-aos="fade-up">
                   <div class="row">
                     <div class=" col-md-6 col-sm-6 col-xs-12 ">
-                      <a href="<?php echo base_url(); ?>">
+                      <a href="<?php echo base_url(); ?>Website/itinerary_details/829634/North East/Seven-Sisters">
                         <div class="hovereffect">
                           <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/Meghalaya_01.gif" alt="">
                           <div class="overlay">
-                            <h2>Assam Special</h2>
+                            <h2>Seven Sisters</h2>
                             <a class="info" href="<?php echo base_url(); ?>">View More</a>
                           </div>
                         </div>

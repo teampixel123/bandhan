@@ -137,6 +137,11 @@
                             <option value="18">Day 18</option>
                             <option value="19">Day 19</option>
                             <option value="20">Day 20</option>
+                            <option value="21">Day 21</option>
+                            <option value="22">Day 22</option>
+                            <option value="23">Day 23</option>
+                            <option value="24">Day 24</option>
+                            <option value="25">Day 25</option>
                           </select>
                           <!-- <input type="number" class="form-control form-control-sm" name="itinerary_day_num" id="itinerary_day_num" placeholder="Day Number"> -->
                         </div>
@@ -193,6 +198,11 @@
                             <option value="18">Day 18</option>
                             <option value="19">Day 19</option>
                             <option value="20">Day 20</option>
+                            <option value="21">Day 21</option>
+                            <option value="22">Day 22</option>
+                            <option value="23">Day 23</option>
+                            <option value="24">Day 24</option>
+                            <option value="25">Day 25</option>
                           </select>
                         </div>
                       </div>

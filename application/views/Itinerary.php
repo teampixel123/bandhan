@@ -37,8 +37,11 @@ include("include/header.php");
       <div class="scrollmenu d-block d-sm-none" id="menu-center1">
           <!-- <a class="active" href="#overview" >Overview</a> -->
           <a href="#itinarary" >Itinerary</a>
+          <a href="#cost" >Cost</a>
+          <a href="#date" >Date</a>
           <a href="#inclusion" >Inclusions</a>
           <a href="#exclusion" >Exclusions</a>
+
         </div>
   </div>
 </div>
@@ -79,9 +82,9 @@ include("include/header.php");
             </div>
           <?php } ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="cost" style="padding-top:40px;">
           <?php if($cost_list){ ?>
-          <div class="cost-table">
+          <div class="cost-table"  >
             <h4 class="border-bottom text-center" style="margin-bottom :5px!important;">Tour Cost </h4>
             <h6 class="tour-bcp">Per Person Ex. <?php echo $tour_details[0]['tour_start_city']; ?></h6>
             <!-- <h5 class="tour-bcp2">&#8377; <?php echo $tour_details[0]['tour_price']; ?> /-<span >+ 5 % GST </span> </h5> -->
@@ -95,13 +98,22 @@ include("include/header.php");
             <br>
             <br>
             <?php if($date_list){ ?>
-            <div class="cost-table">
+              <div class="cost-table d-none d-sm-block">
+                <h4 class="text-center" style="margin-bottom :15px!important;">Departure Dates </h4>
+                <h4 class="final-price" style="background-color:rgb(128,128,128, 0.5)!important;"> <?php echo $tour_details[0]['tour_start_city']; ?> to <?php echo $tour_details[0]['tour_end_city']; ?></h4>
+                  <?php foreach ($date_list as $date_list2): ?>
+                    <h6 class="text-center"><?php echo $date_list2->departure_date; ?></h6>
+                  <?php endforeach; ?>
+                </div>
+            <div class="departure-table d-block d-sm-none" id="date" style="padding-top:40px;">
+            <div class="cost-table" >
               <h4 class="text-center" style="margin-bottom :15px!important;">Departure Dates </h4>
               <h4 class="final-price" style="background-color:rgb(128,128,128, 0.5)!important;"> <?php echo $tour_details[0]['tour_start_city']; ?> to <?php echo $tour_details[0]['tour_end_city']; ?></h4>
                 <?php foreach ($date_list as $date_list): ?>
                   <h6 class="text-center"><?php echo $date_list->departure_date; ?></h6>
                 <?php endforeach; ?>
               </div>
+            </div>
             <?php } ?>
           </div>
       </div>
