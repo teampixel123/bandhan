@@ -2277,6 +2277,33 @@ div.scrollmenu a:hover {
   }
 }
 
+.banner4 {
+    background:url(../images/banner/banner_desktop_4.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    min-height:460px;
+		width: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 700px) {
+.banner4 {
+	background:url(../images/banner/banner_mob_4.jpg) no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	min-height:200px;
+	width: 100%;
+	position: relative;
+  }
+}
+
+
 .about_banner {
 	/* height:50%; */
 	background:url(../images/banner/about_banner_desktop.gif) no-repeat top center;

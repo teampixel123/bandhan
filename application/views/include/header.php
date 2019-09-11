@@ -21,6 +21,7 @@ $active='active';
       <script src="<?php echo base_url('assets/js/aos.js');?>"></script>
       <link  href="<?php echo base_url('assets/css/style.css');?>" rel="stylesheet">
       <link href="<?php echo base_url('assets/css/font-awesome.min.css');?>" rel="stylesheet">
+      <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link  href="<?php echo base_url('assets/css/owl.carousel.css');?>" rel="stylesheet">
       <link  href="<?php echo base_url('assets/css/owl.theme.default.min.css');?>" rel="stylesheet">
     </head>
@@ -34,7 +35,7 @@ $active='active';
         <div class="col-md-12 float-right">
       <p class="top-header d-none d-sm-block">
         <i class="fa fa-mobile grey text-b" aria-hidden="true"></i>
-            &nbsp; +91 9422332610
+            &nbsp; +91 94 2233 2610
         <a target="_blank" href="https://www.facebook.com/Bandhan-Tourism-588031544923443/" class="facebook"> <i class="fa fa-facebook-square grey ml-3" aria-hidden="true"></i></a>
         <a target="_blank" href="https://twitter.com/bandhan_tourism" class="twitter">  <i class="fa fa-twitter-square  grey"></i></a>
         <a target="_blank" href="https://www.instagram.com/bandhantourism/" class="instagram" >  <i class="fa fa-instagram grey"></i></a>

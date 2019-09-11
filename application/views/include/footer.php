@@ -29,10 +29,7 @@ $active1='currentLink';
 
               <h5 class="center white-light">Mumbai Office</h5>
               <div class="underline-grey center" ></div>
-                  <p class="pt-1 foot-center">Onyx Society,
-                      Opposite D’Mart,
-                      Godrej Hills, Khadakpada,
-                      Kalyan(West)-421301 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;&nbsp;+91&nbsp;&nbsp;9422332610</i> </span></p>
+                  <p class="pt-1 foot-center">312/Blue Nile building, l b s Road, opp debonair society Thane West 400601 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;&nbsp;+91&nbsp;&nbsp;9422332610</i> </span></p>
 
 
                     <h5 class="center white-light">Pune Office</h5>
@@ -40,7 +37,7 @@ $active1='currentLink';
                          <p class="pt-1 foot-center ">386,Padmaja Apartment,
                                   2nd floor, Tambe Bol,
                                   Shanivar Peth,
-                                  Pune 411030 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;+91&nbsp;9422332675</i> </span></p>
+                                  Pune 411030 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;+91&nbsp;9422332609</i> </span></p>
 
                                   <h5 class="center white-light">Kolhapur Office</h5>
                                   <div class="underline-grey " ></div>

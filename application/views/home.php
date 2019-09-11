@@ -11,6 +11,7 @@ include('include/header.php');
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
 
   <div class="carousel-inner">
@@ -32,12 +33,30 @@ include('include/header.php');
    </div>
    </a>
   </div>
+  <div class="carousel-item ">
+    <a href="<?php echo base_url(); ?>/Website/itinerary_details/829634/North East/Seven-Sisters">
+    <div class="banner3">
+    <!-- <div class="carousel-caption heartBeat ">
+      <img class="b1 img-responsive center-block " src="<?php echo base_url(); ?>assets/images/bg_img/Tour-02.png" alt="First slide">
+    </div> -->
+  </div>
+  </a>
+ </div>
+ <div class="carousel-item ">
+   <a href="<?php echo base_url(); ?>/Website/itinerary_details/493156/North East/Four-Sisters-">
+   <div class="banner4">
+   <!-- <div class="carousel-caption heartBeat ">
+     <img class="b1 img-responsive center-block " src="<?php echo base_url(); ?>assets/images/bg_img/Tour-02.png" alt="First slide">
+   </div> -->
+ </div>
+ </a>
+</div>
   <!-- <div class="carousel-item ">
     <a href="#">
     <div class="banner3 ">
-    <!-- <div class="carousel-caption heartBeat  ">
+    < <div class="carousel-caption heartBeat  ">
       <img class="b1 img-responsive center-block " src="<?php echo base_url(); ?>assets/images/bg_img/Tour-03.png" alt="First slide">
-    </div> --
+    </div>
   </div>
   </a>
  </div> -->
@@ -75,11 +94,11 @@ include('include/header.php');
           <div class="owl-container">
           <div class="owl-carousel owl-theme">
             <div class="item">
-              <a href="<?php echo base_url(); ?>Website/itinerary_details/294351/International/Bangkok-Pattaya">
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/634271/Bhutan/Mesmerising-Bhutan">
               <div class="card" >
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl5.jpg" width="100%" alt="Card image cap">
                   <div class="card-img-overlay">
-                    <h3 class="card-title text-white" >Bangkok</h3>
+                    <h3 class="card-title text-white" >Mesmerising Bhutan</h3>
                   </div>
               </div>
               </a>
@@ -89,7 +108,7 @@ include('include/header.php');
               <div class="card" >
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl4.jpg" width="100%" alt="Card image cap">
                   <div class="card-img-overlay">
-                    <h3 class="card-title text-white">Meghalaya</h3>
+                    <h3 class="card-title text-white">Assam Meghalaya</h3>
                   </div>
               </div>
               </a>
@@ -135,11 +154,11 @@ include('include/header.php');
               </a>
             </div>
             <div class="item">
-              <a href="<?php echo base_url(); ?>Website/itinerary_details/168942/Karnataka/Mysore-Ooty-Bangalore">
+              <a href="<?php echo base_url(); ?>Website/itinerary_details/439721/Kerala/Kerala-With-Kanyakumari">
                 <div class="card" >
                   <img class="card-img-top" src="<?php echo base_url(); ?>assets/images/owl/owl8.jpg" width="100%" alt="Card image cap">
                     <div class="card-img-overlay">
-                      <h3 class="card-title text-white">Banglore </h3>
+                      <h3 class="card-title text-white">Kerala With Kanyakumari</h3>
                     </div>
                 </div>
               </a>
@@ -339,7 +358,7 @@ include('include/header.php');
                           <img class="img-responsive" src="<?php echo base_url(); ?>assets/images/special_tours/Meghalaya_01.gif" alt="">
                           <div class="overlay">
                             <h2>Seven Sisters</h2>
-                            <a class="info" href="<?php echo base_url(); ?>">View More</a>
+                            <a class="info" href="<?php echo base_url(); ?>Website/itinerary_details/829634/North East/Seven-Sisters">View More</a>
                           </div>
                         </div>
                       </a>
@@ -444,7 +463,7 @@ include('include/header.php');
       </div>
     </div>
     <div class="container text-center">
-      <a href="contact.php">
+      <a href="<?php echo base_url(); ?>Contact">
         <button class="btn btn-outline-primary">Book Now</button>
       </a>
     </div>
