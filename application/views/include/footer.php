@@ -7,14 +7,10 @@ $active1='currentLink';
       <br><br><br>
       <div class="container ">
         <div class="row footer">
-
-
-
           <div class="col-md-12  d-block d-sm-none ">
             <img src="<?php echo base_url(); ?>assets/images/Bandhan Logo.png" class="logo_img-footer"  style="width:50%!important; margin-top:-10%!important; margin-bottom:10px;" alt="" width="50%">
           </div>
-
-          <div class="col-md-3 center d-none d-sm-block">
+            <div class="col-md-3 center d-none d-sm-block">
               <h5 class=" white-light">Recent Tours</h5>
               <div class="underline-grey" ></div>
              <a href="<?php echo base_url(); ?>Website/itinerary_details/254137/Gujarat/Statue-Of-Unity-" class="link-page1"><p class="bottom-border">Statue Of Unity</p></a>
@@ -22,16 +18,10 @@ $active1='currentLink';
               <a href="<?php echo base_url(); ?>Website/itinerary_details/246831/North-East/Assam---Meghalaya" class="link-page1" ><p class="bottom-border" >Assam - Meghalaya</p></a>
               <a href="<?php echo base_url(); ?>Website/itinerary_details/493156/North East/Four-Sisters-" class="link-page1" ><p class="bottom-border" >Four Sisters</p></a>
             </div>
-
-
-
           <div class="col-md-5 center text-footer-grey">
-
               <h5 class="center white-light">Mumbai Office</h5>
               <div class="underline-grey center" ></div>
-                  <p class="pt-1 foot-center">312/Blue Nile building, l b s Road, opp debonair society Thane West 400601 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;&nbsp;+91&nbsp;&nbsp;9422332610</i> </span></p>
-
-
+                  <p class="pt-1 foot-center">312/Blue Nile building, l B S Road, opp debonair society Thane West 400601 <span class="mob"> <i class="fa fa-mobile ml-3 mr-3" aria-hidden="true">&nbsp;&nbsp;&nbsp;+91&nbsp;&nbsp;9422332610</i> </span></p>
                     <h5 class="center white-light">Pune Office</h5>
                     <div class="underline-grey " ></div>
                          <p class="pt-1 foot-center ">386,Padmaja Apartment,
